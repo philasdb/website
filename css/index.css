@@ -1,0 +1,47 @@
+header {
+  margin: 0;
+  background: lightgray;
+}
+header nav ul {
+  position: sticky;
+  list-style-type: none;
+  border: 0;
+  margin: 0 0 0 10px;
+  padding: 1rem;
+  overflow: hidden;
+}
+header nav ul li {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  height: 84px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 20px;
+  float: left;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#visit iframe {
+  float: left;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+#pastor h1 {
+  clear: left;
+}
+
+html {
+  background-color: yellowgreen;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
