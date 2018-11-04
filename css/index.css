@@ -1,47 +1,64 @@
 header {
   margin: 0;
-  background: lightgray;
+  position: sticky;
+  top: 0px;
+  background: #BDBDBD;
+}
+header nav {
+  width: 960px;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 header nav ul {
-  position: sticky;
   list-style-type: none;
   border: 0;
-  margin: 0 0 0 10px;
-  padding: 1rem;
+  margin: 0;
+  padding: 1rem 0;
   overflow: hidden;
 }
 header nav ul li {
   position: relative;
-  top: 50%;
   text-align: center;
   height: 84px;
   padding-left: 1rem;
   padding-right: 1rem;
-  line-height: 20px;
+  line-height: 84px;
   float: left;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 2rem;
+  background: white;
+}
+
+#main-image {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 950px;
+  width: 100%;
 }
 
 #visit iframe {
-  float: left;
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
 
-#pastor h1 {
-  clear: left;
-}
-
 html {
-  background-color: yellowgreen;
+  background-color: #9CF5CF;
 }
 
 body {
   margin: 0;
+}
+
+footer {
+  margin: 0;
+  text-align: center;
+  background-color: #058;
+  padding: 2em;
 }
 
 /*# sourceMappingURL=index.css.map */
