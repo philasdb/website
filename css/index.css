@@ -5,15 +5,15 @@ header {
   background: #BDBDBD;
 }
 header nav {
-  width: 960px;
-  padding: 0 1rem;
+  max-width: 1000px;
+  padding: 0;
   margin: 0 auto;
 }
 header nav ul {
   list-style-type: none;
   border: 0;
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
   overflow: hidden;
 }
 header nav ul li {
@@ -24,6 +24,19 @@ header nav ul li {
   padding-right: 1rem;
   line-height: 84px;
   float: left;
+}
+
+h1 {
+  color: #058;
+  font-family: "Century Gothic";
+}
+
+h2 {
+  color: #636363;
+}
+
+a {
+  text-decoration: none;
 }
 
 main {
@@ -44,10 +57,7 @@ main {
 #visit iframe {
   padding-right: 1rem;
   padding-bottom: 1rem;
-}
-
-html {
-  background-color: #9CF5CF;
+  max-width: 100%;
 }
 
 body {
@@ -59,6 +69,7 @@ footer {
   text-align: center;
   background-color: #058;
   padding: 2em;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

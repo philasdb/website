@@ -1,20 +1,21 @@
 $blue: #058; $green: #00AC66; $teal: #9CF5CF; $grey: #636363; $yellow: #DEDB6C;
 $content-width: 960px;
 
+
 header {
   margin: 0;
   position: sticky;
   top: 0px;
   background: #BDBDBD;
   nav {
-    width: $content-width;
-    padding: 0 1rem;
+    max-width: 1000px;
+    padding: 0;
     margin: 0 auto;
     ul {
       list-style-type: none;
       border: 0;
       margin: 0;
-      padding: 1rem 0;
+      padding: 0;
       overflow: hidden;
       li {
         position: relative;
@@ -29,6 +30,19 @@ header {
   }
 }
 
+h1 {
+  color: $blue;
+  font-family: "Century Gothic";
+  
+}
+
+h2 {
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+}
 
 main {
   max-width: 960px;
@@ -49,11 +63,8 @@ main {
   iframe {
     padding-right: 1rem;
     padding-bottom: 1rem;
+    max-width: 100%;
   }
-}
-
-html {
-  background-color: $teal;
 }
 
 body {
@@ -65,4 +76,5 @@ footer {
   text-align: center;
   background-color: $blue;
   padding: 2em;
+  color: white;
 }
