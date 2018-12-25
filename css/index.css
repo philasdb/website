@@ -2,36 +2,52 @@ header {
   margin: 0;
   position: sticky;
   top: 0px;
-  background: #BDBDBD;
+  background: #058;
+}
+header h1 {
+  font-family: source-serif-pro, serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
 }
 header nav {
-  max-width: 1000px;
+  max-width: 960px;
   padding: 0;
   margin: 0 auto;
 }
 header nav ul {
+  width: 100%;
   list-style-type: none;
   border: 0;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
 }
 header nav ul li {
   position: relative;
   text-align: center;
-  height: 84px;
+  height: 54px;
   padding-left: 1rem;
   padding-right: 1rem;
-  line-height: 84px;
+  line-height: 54px;
   float: left;
+}
+header nav ul li :hover {
+  color: #9CF5CF;
 }
 
 h1 {
   color: #058;
-  font-family: "Century Gothic";
+  font-family: source-sans-pro, sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 0;
 }
 
 h2 {
+  font-family: source-serif-pro, serif;
   color: #636363;
 }
 
@@ -55,20 +71,29 @@ main {
 }
 
 #visit iframe {
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
+  width: 960px;
   max-width: 100%;
+}
+#visit div {
+  position: relative;
+  margin: 0 auto;
 }
 
 body {
   margin: 0;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer {
+  font-family: source-serif-pro, serif;
   margin: 0;
   text-align: center;
-  background-color: #058;
-  padding: 2em;
+  background-color: grey;
+  padding: 2rem;
   color: white;
 }
 
