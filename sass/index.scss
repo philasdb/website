@@ -54,10 +54,8 @@ h1 {
 h2 {
   font-family: source-serif-pro, serif;
   color: $grey;
-}
-
-a {
-  text-decoration: none;
+  font-weight: normal;
+  margin: 0;
 }
 
 main {
@@ -65,6 +63,32 @@ main {
   margin: 0 auto;
   padding: 2rem;
   background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  a {
+    color: $green;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#pastor {
+  img {
+    border-radius: 50%;
+    float: right;
+    height: 200px;
+    padding: 0 2rem;
+  }
+}
+
+#ministries h1 {
+  clear: right;
 }
 
 #main-image {
@@ -99,7 +123,8 @@ footer {
   font-family: source-serif-pro, serif;
   margin: 0;
   text-align: center;
-  background-color: grey;
+  background-color: $grey;
   padding: 2rem;
   color: white;
 }
+
