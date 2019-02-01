@@ -1,6 +1,7 @@
 $blue: #058; $green: #00AC66; $teal: #9CF5CF; $grey: #636363; $yellow: #DEDB6C;
-$content-width: 960px;
-$body-font: source-sans-pro;
+$content-width: 920px;
+$sans-serif-font: source-sans-pro;
+$serif-font: source-serif-pro;
 
 
 header {
@@ -9,7 +10,7 @@ header {
   top: 0px;
   background: $blue;
   h1 {
-    font-family: source-serif-pro, serif;
+    font-family: $serif-font, serif;
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -44,7 +45,7 @@ header {
 
 h1 {
   color: $blue;
-  font-family: source-sans-pro, sans-serif;
+  font-family: $sans-serif-font, sans-serif;
   font-size: 3rem;
   font-weight: 200;
   font-style: normal;
@@ -52,14 +53,14 @@ h1 {
 }
 
 h2 {
-  font-family: source-serif-pro, serif;
+  font-family: $serif-font, serif;
   color: $grey;
   font-weight: normal;
   margin: 0;
 }
 
 main {
-  max-width: 960px;
+  max-width: $content-width;
   margin: 0 auto;
   padding: 2rem;
   background: white;
@@ -114,17 +115,18 @@ p {
 
 body {
   margin: 0;
-  font-family: source-sans-pro, sans-serif;
+  font-family: $sans-serif-font, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 footer {
-  font-family: source-serif-pro, serif;
+  font-family: $serif-font, serif;
   margin: 0;
   text-align: center;
   background-color: $grey;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   color: white;
 }
 

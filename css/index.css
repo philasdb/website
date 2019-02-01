@@ -12,7 +12,7 @@ header h1 {
   margin: 0;
 }
 header nav {
-  max-width: 960px;
+  max-width: 920px;
   padding: 0;
   margin: 0 auto;
 }
@@ -54,7 +54,7 @@ h2 {
 }
 
 main {
-  max-width: 960px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 2rem;
   background: white;
@@ -93,7 +93,7 @@ p a:hover {
 #visit iframe {
   display: block;
   margin: 0 auto;
-  width: 960px;
+  width: 920px;
   max-width: 100%;
 }
 #visit div {
@@ -113,7 +113,8 @@ footer {
   margin: 0;
   text-align: center;
   background-color: #636363;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   color: white;
 }
 
