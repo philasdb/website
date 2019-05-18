@@ -71,15 +71,19 @@ p a:hover {
   text-decoration: underline;
 }
 
+#pastor {
+  overflow: hidden;
+  display: block;
+  float: left;
+}
 #pastor img {
-  border-radius: 50%;
   float: right;
-  height: 200px;
-  padding: 0 2rem;
+  height: 180px;
+  padding: 0 1rem;
 }
 
 #ministries h1 {
-  clear: right;
+  clear: all;
 }
 
 #main-image {
