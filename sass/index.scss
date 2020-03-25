@@ -31,8 +31,7 @@ header {
         position: relative;
         text-align: center;
         height: 54px;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         line-height: 54px;
         float: left;
         :hover {
@@ -41,7 +40,17 @@ header {
       }
     }
   }
+  .alert {
+    color: white;
+    background: red;
+    padding: 0.5rem 0;
+    p {
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+  }
 }
+
 
 h1 {
   color: $blue;
