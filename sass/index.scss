@@ -20,6 +20,13 @@ header {
     max-width: $content-width;
     padding: 0;
     margin: 0 auto;
+    button {
+      background: none;
+      margin: 0;
+      border: none;
+      padding: 0;
+      height: 100%
+    }
     ul {
       width: 100%;
       list-style-type: none;
