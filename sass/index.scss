@@ -3,30 +3,15 @@ $content-width: 920px;
 $sans-serif-font: source-sans-pro;
 $serif-font: source-serif-pro;
 
-
 header {
   margin: 0;
   position: sticky;
   top: 0px;
   background: $blue;
-  h1 {
-    font-family: $serif-font, serif;
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0;
-  }
   nav {
     max-width: $content-width;
     padding: 0;
     margin: 0 auto;
-    button {
-      background: none;
-      margin: 0;
-      border: none;
-      padding: 0;
-      height: 100%
-    }
     ul {
       width: 100%;
       list-style-type: none;
@@ -35,12 +20,21 @@ header {
       padding: 0;
       overflow: hidden;
       li {
+        font-family: $serif-font, serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: white;
+        margin: 0;
+        height: 54px;
+        line-height: 54px;
+        padding-right: 2rem;
         position: relative;
         text-align: center;
-        height: 54px;
-        padding-right: 2rem;
-        line-height: 54px;
         float: left;
+        a {
+          color: inherit;
+          cursor: pointer;
+        }
         :hover {
           color: $teal;
         }
