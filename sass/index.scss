@@ -1,4 +1,4 @@
-$blue: #058; $green: #00AC66; $teal: #9CF5CF; $grey: #636363; $yellow: #DEDB6C;
+$blue: #058; $green: #00AC66; $teal: #9CF5CF; $grey: #636363; $yellow: #FFFFCB;
 $content-width: 920px;
 $sans-serif-font: source-sans-pro;
 $serif-font: source-serif-pro;
@@ -81,11 +81,30 @@ a {
 }
 
 p {
+  text-align: justify;
   a {
     color: $green;
   }
   a:hover {
     text-decoration: underline;
+  }
+}
+
+#message {
+  padding: 1.5rem 4rem;
+  background-color: $yellow;
+  color: black;
+  margin-bottom: 2rem;
+  h1 {
+    margin-top: 0;
+    color: black;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 115%;
   }
 }
 
@@ -141,5 +160,9 @@ footer {
   padding-top: 2rem;
   padding-bottom: 1rem;
   color: white;
+  p {
+    all: inherit;
+    padding-top: 1rem;
+  }
 }
 
