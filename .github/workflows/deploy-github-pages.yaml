@@ -1,0 +1,84 @@
+
+name: Deploy Github Pages
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Artifact name'
+        required: false
+        default: 'github-pages'
+      path:
+        description: "Path of the directory containing the static assets."
+        required: true
+        default: "dist/"
+      retention-days:
+        description: "Duration after which artifact will expire in days."
+        required: false
+        default: "1"
+      outputs:
+      artifact_id:
+        description: "The ID of the artifact that was uploaded."
+        value: ${{ steps.upload-artifact.outputs.artifact-id }}
+  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Website
+        run: yarn build
+
+      - name: Archive artifact
+        shell: sh    
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory "$INPUT_PATH" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+        env:
+          INPUT_PATH: ${{ inputs.path }}
+
+      - name: Upload artifact
+        id: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+            name: ${{ inputs.name }}
+            path: ${{ runner.temp }}/artifact.tar
+            retention-days: ${{ inputs.retention-days }}
+            if-no-files-found: error
+      
+  deploy:
+     # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+  
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
