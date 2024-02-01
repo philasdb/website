@@ -1,7 +1,7 @@
 $blue: #058; $green: #00AC66; $teal: #9CF5CF; $grey: #636363; $yellow: #FFFFCB;
 $content-width: 920px;
-$sans-serif-font: source-sans-pro;
-$serif-font: source-serif-pro;
+$sans-serif-font: 'Source Sans 3';
+$serif-font: 'Source Serif 4';
 
 header {
   margin: 0;
@@ -82,9 +82,6 @@ a {
 
 p {
   text-align: justify;
-  a {
-    color: $green;
-  }
   a:hover {
     text-decoration: underline;
   }
