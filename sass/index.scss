@@ -163,3 +163,9 @@ footer {
   }
 }
 
+.row {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  padding: 5x;
+}
