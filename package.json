@@ -2,8 +2,8 @@
   "source": "index.html",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel ./*.html",
+    "build": "parcel build ./*.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.11.0",
