@@ -1,8 +1,8 @@
 {
   "scripts": {
     "prebuild": "rm -rf dist",
-    "start": "parcel src/**/*.html",
-    "build": "parcel build src/**/*.html"
+    "start": "parcel src/index.html src/**/*.html",
+    "build": "parcel build src/index.html src/**/*.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.11.0",
