@@ -1,13 +1,14 @@
 const fs = require('fs');
 const path = require('path');
+const handlebars = require('handlebars');
 
 
 
+function build() {
 
-function buildArchive() {
+    var template = fs.readFileSync("./templates/archive.html", "utf8");
 
-
-    var f = fs.re
+    var compiledTemlate = handlebars.compile(template);
 
     var targetDir = path.join(__dirname, './bulletin');
 
@@ -22,15 +23,16 @@ function buildArchive() {
             }
         });
 
-        bulletins.sort();
+        bulletins.reverse();
 
+        console.log(compiledTemlate({bulletins}))
 
-        bulletins.forEach(bulletin => console.log(bulletin));
-
+        fs.writeFileSync('../dist/bulletin/archive.html',compiledTemlate({bulletins}));
 
     });
-
 }
+
+build();
 
 
 
