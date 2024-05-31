@@ -2,15 +2,17 @@ const fs = require('fs');
 const path = require('path');
 const handlebars = require('handlebars');
 
+
+
 function build() {
 
-    let archiveTemplatePath = path.join('.', 'templates', 'archive.html')
+    let archiveTemplatePath = path.join(__dirname, 'templates', 'archive.html')
 
     var template = fs.readFileSync(archiveTemplatePath, "utf8");
 
     var compiledTemlate = handlebars.compile(template);
 
-    var targetDir = path.join(__dirname, './bulletin');
+    var targetDir = path.join(__dirname, 'bulletin');
 
     fs.readdir(targetDir, (error, files) => {
         if (error) {
@@ -27,9 +29,11 @@ function build() {
 
         console.log(compiledTemlate({bulletins}))
 
-        archiveDestionation = path.join('..' , 'dist', 'bulletin', 'archive.html')
+        var archiveDestinationPath = path.join('..' , 'dist', 'bulletin', 'archive.html')
 
-        fs.writeFileSync(archiveTemplatePath,compiledTemlate({bulletins}));
+        console.log(archiveDestinationPath)
+
+        fs.writeFileSync(archiveDestinationPath,compiledTemlate({bulletins}));
 
     });
 }
