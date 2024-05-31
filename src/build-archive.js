@@ -2,11 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const handlebars = require('handlebars');
 
-
-
 function build() {
 
-    var template = fs.readFileSync("./templates/archive.html", "utf8");
+    let archiveTemplatePath = path.join('.', 'templates', 'archive.html')
+
+    var template = fs.readFileSync(archiveTemplatePath, "utf8");
 
     var compiledTemlate = handlebars.compile(template);
 
@@ -27,7 +27,9 @@ function build() {
 
         console.log(compiledTemlate({bulletins}))
 
-        fs.writeFileSync('../dist/bulletin/archive.html',compiledTemlate({bulletins}));
+        archiveDestionation = path.join('..' , 'dist', 'bulletin', 'archive.html')
+
+        fs.writeFileSync(archiveTemplatePath,compiledTemlate({bulletins}));
 
     });
 }
