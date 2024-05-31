@@ -24,6 +24,10 @@
 
  @media print and (orientation: landscape) {
 
+    #archive {
+        display: none;
+    }
+
      /* Reduce margin and padding for better printing */
      body,
      .container,

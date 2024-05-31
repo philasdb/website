@@ -6,13 +6,13 @@ const handlebars = require('handlebars');
 
 function build() {
 
-    let archiveTemplatePath = path.join(__dirname, 'templates', 'archive.html')
+    let archiveTemplatePath = path.join(__dirname, 'src', 'templates', 'archive.html')
 
     var template = fs.readFileSync(archiveTemplatePath, "utf8");
 
     var compiledTemlate = handlebars.compile(template);
 
-    var targetDir = path.join(__dirname, 'bulletin');
+    var targetDir = path.join(__dirname, 'src','bulletin');
 
     fs.readdir(targetDir, (error, files) => {
         if (error) {
@@ -29,7 +29,7 @@ function build() {
 
         console.log(compiledTemlate({bulletins}))
 
-        var archiveDestinationPath = path.join(__dirname,'..' , 'dist', 'bulletin', 'archive.html');
+        var archiveDestinationPath = path.join(__dirname, 'src', 'bulletin', 'archive.html');
 
         console.log(archiveDestinationPath);
 
