@@ -29,9 +29,9 @@ function build() {
 
         console.log(compiledTemlate({bulletins}))
 
-        var archiveDestinationPath = path.join('..' , 'dist', 'bulletin', 'archive.html')
+        var archiveDestinationPath = path.join(__dirname,'..' , 'dist', 'bulletin', 'archive.html');
 
-        console.log(archiveDestinationPath)
+        console.log(archiveDestinationPath);
 
         fs.writeFileSync(archiveDestinationPath,compiledTemlate({bulletins}));
 
