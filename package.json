@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "prebuild": "node clean.js",
-    "start": "node build-templates.js && parcel src/index.html src/**/*.html",
-    "build": "node build-templates.js && parcel build src/index.html src/**/*.html"
+    "prebuild": "node clean.js && node build-templates.js",
+    "prestart": "node clean.js && node build-templates.js",
+    "start": "parcel src/index.html src/**/*.html --no-cache",
+    "build": "parcel build src/index.html src/**/*.html --no-cache"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
