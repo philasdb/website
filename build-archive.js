@@ -20,7 +20,7 @@ function build() {
         }
         var bulletins = []
         files.forEach(file => {
-            if (!file.endsWith(".css") && !file.endsWith("index.html")) {
+            if (!file.endsWith(".css") && !file.endsWith("index.html") && !file.endsWith("archive.html")) {
                 bulletins.push(file);
             }
         });

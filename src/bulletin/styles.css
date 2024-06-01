@@ -22,9 +22,19 @@
     margin-top: 5px;
  }
 
+ .donate-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color:blue
+ }
+
+ .donate-link a:visited {
+    color:blue
+ }
+
  @media print and (orientation: landscape) {
 
-    #archive {
+    .hide-on-print {
         display: none;
     }
 
