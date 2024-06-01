@@ -1,80 +1,80 @@
- body {
-     font-family: Arial, sans-serif;
- }
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+}
 
- .container {
-     display: flex;
-     justify-content: space-between;
-     margin: 0 auto;
-     max-width: 800px;
- }
+.left-column,
+.right-column {
+    flex: 1;
+}
 
- .left-column,
- .right-column {
-     width: 40%;
- }
+body {
+    font-family: Arial, sans-serif;
+}
 
- .announcement {
+.announcement {
     margin-top: 5px;
- }
+}
 
- .item {
+.item {
     margin-top: 5px;
- }
+}
 
- .donate-link a {
+.donate-link a {
     text-decoration: none;
     font-weight: bold;
-    color:blue
- }
+    color: blue
+}
 
- .donate-link a:visited {
-    color:blue
- }
+.donate-link a:visited {
+    color: blue
+}
 
- @media print and (orientation: landscape) {
+@media print and (orientation: landscape) {
 
     .hide-on-print {
         display: none;
     }
 
-     /* Reduce margin and padding for better printing */
-     body,
-     .container,
-     .left-column,
-     .right-column {
-         margin: 0;
-         padding: 0;
-     }
+    /* Reduce margin and padding for better printing */
+    body,
+    .container,
+    .left-column,
+    .right-column {
+        margin: 0;
+        padding: 0;
+    }
 
-     .container {
-         flex-direction: row;
-     }
+    .container {
+        flex-direction: row;
+    }
 
-     .left-column,
-     .right-column {
-         margin-left: 3%;
-         width: 50%;
-         padding: 0 50px; 
-     }
+    .left-column,
+    .right-column {
+        margin-left: 3%;
+        width: 50%;
+        padding: 0 50px;
+    }
 
-     /* Hide some elements not necessary for printing */
-     h1,
-     h2,
-     h3,
-     h4,
-     h5,
-     h6 {
-         page-break-after: avoid;
-     }
+    /* Hide some elements not necessary for printing */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
 
-     a {
-         text-decoration: none;
-         color: black;
-     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-     a[href]:after {
-         display: none;
-     }
+    a[href]:after {
+        display: none;
+    }
 
- }
+}
