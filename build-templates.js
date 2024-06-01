@@ -2,11 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const handlebars = require('handlebars');
 
+function buildBulletinArchivePage() {
 
-
-function build() {
-
-    let archiveTemplatePath = path.join(__dirname, 'src', 'templates', 'archive.html')
+    let archiveTemplatePath = path.join(__dirname, 'src', 'templates','bulletin','archive.hbs')
 
     var template = fs.readFileSync(archiveTemplatePath, "utf8");
 
@@ -38,7 +36,4 @@ function build() {
     });
 }
 
-build();
-
-
-
+buildBulletinArchivePage();

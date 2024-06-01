@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "prebuild": "rm -rf dist && node build-archive.js",
-    "start": "parcel src/index.html src/**/*.html",
-    "build": "parcel build src/index.html src/**/*.html"
+    "prebuild": "node clean.js",
+    "start": "node build-templates.js && parcel src/index.html src/**/*.html",
+    "build": "node build-templates.js && parcel build src/index.html src/**/*.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
