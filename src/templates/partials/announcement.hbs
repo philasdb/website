@@ -1,5 +1,7 @@
 <div class="announcement">
-    <b>{{date}}</b>
+    <b>{{formatDate startDate "MMMM dd"}}
+        {{#if endDate}} - {{formatDate endDate "MMMM dd"}}{{/if}}
+    </b>
     <div>{{description}}</div>
     {{#if location}}
     <div>
