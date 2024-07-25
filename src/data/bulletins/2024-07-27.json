@@ -1,0 +1,43 @@
+{
+    "date":"2024-07-27",
+    "sabbathSchool":{
+        "topic":"Expectant Watchfulness",
+        "study": "Psalm 130",
+        "background": "Psalm 130",
+        "devotional": "Matthew 25:1-13"
+    },
+    "announcements": [
+        {
+            "description": "NYC SDB Church 50th Anniversary",
+            "startDate": "2024-09-20",
+            "endDate": "2024-09-22",
+            "location": "1904 Fulton Street, Brooklyn, NY 11233"
+        },
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        },
+        {
+            "description": "Mid-Year Business Meeting",
+            "startDate": "2024-08-04",
+            "time": "7pm",
+            "location": "Zoom"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*"
+    ],
+    "thoughtOfTheDay": "Exodus 3:3",
+    "openingSong": 11,
+    "responsiveReading": "Jonah 3:1-8",
+    "tithesAndOfferingSong": 16,
+    "scriptureReading": "Jonah 1:1-9",
+    "message": {
+        "title":"The Uncomfortable Called",
+        "speaker": "Pastor Selvin Findlater"
+    },
+    "closingSong": 219
+}
