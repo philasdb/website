@@ -1,0 +1,13 @@
+<div class="song">
+    <em>{{title}}</em>
+    {{#if hymnNumber}}
+    <div>
+        <a href="{{url}}" target="_blank">{{hymnal}} #{{hymnNumber}}</a>
+    </div>
+    {{else if artist}}
+    <div>by {{artist}}</div>
+    {{/if}}
+    {{#if additionalInfo}}
+    <div>{{additionalInfo}}</div>
+    {{/if}}
+</div>

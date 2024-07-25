@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia SDB Bulletin - {{date}}</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>{{date}}</h1>
+            <a class="hide-on-print" href="archive.html">Bulletin Archive</a>
+
+            <section class="sabbath-school">
+                <h2>Sabbath School @ 11am</h2>
+
+                <div><b>Topic:</b> "{{sabbathSchool.topic}}"</div>
+                {{> scripture title="Study" reference=sabbathSchool.study }}
+                {{> scripture title="Background" reference=sabbathSchool.background }}
+                {{> scripture title="Devotional" reference=sabbathSchool.devotional }}
+            </section>
+
+            <section class="announcements">
+                <h2>Announcements</h2>
+                {{#each announcements}}
+                {{> announcement}}
+                {{/each}}
+            </section>
+
+            {{#each notes}}
+            <p><b>{{this}}</b></p>
+            {{/each}}
+        </div>
+        <div class="right-column">
+
+            <section>
+                <div class="item">
+                    <h2>Divine Worship</h2>
+                </div>
+
+                <div class="item">
+                    <div><b>Prelude</b></div>
+                </div>
+
+                <div class="item">
+                    {{> scripture title="Thought for the Day" reference=thoughtOfTheDay}}
+                    {{scriptureText thoughtOfTheDay}}
+                </div>
+
+                <div class="item">
+                    <div><b>Opening Song</b></div>
+                    {{ song openingSong }}
+                </div>
+
+                <div class="item">
+                    <div><b>Opening Prayer</b></div>
+                </div>
+
+                <div class="item">
+                    {{> scripture title="Responsive Reading" reference=responsiveReading}}
+                </div>
+
+                <div class="item">
+
+                    <div><b>Tithes and Offering</b>
+                        <span class="hide-on-print donate-link">
+                            <a href="https://philasdb.org/#donate" target="_blank">Donate</a>
+                        </span>
+                    </div>
+                    {{ song tithesAndOfferingSong }}
+                </div>
+
+                <div class="item">
+                    {{> scripture title="Scripture Reading" reference=scriptureReading}}
+                </div>
+
+                <div class="item">
+                    <div><b>Special Music</b></div>
+                </div>
+
+                <div class="item">
+                    <div><b>Message</b></div>
+                    <em>{{message.title}}</em>
+                    <div><b>{{message.speaker}}</b> </div>
+                </div>
+
+                <div class="item">
+                    <div><b>Closing Song</b></div>
+                    {{ song closingSong }}
+                </div>
+
+                <div class="item">
+                    <div><b>Closing Prayer</b></div>
+                </div>
+
+                <div class="item">
+                    <div><b>Benediction</b></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

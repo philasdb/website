@@ -1,0 +1,12 @@
+<div class="announcement">
+    <b>{{date}}</b>
+    <div>{{description}}</div>
+    {{#if location}}
+    <div>
+        <address><small>{{location}}</small></address>
+    </div>
+    {{/if}}
+    {{#if link}}
+    <div class="hide-on-print"><a href="{{link.href}}" target="_blank">{{link.name}}</a></div>
+    {{/if}}
+</div>
