@@ -1,7 +1,11 @@
 <div class="announcement">
-    <b>{{formatDate startDate "MMMM dd"}}
-        {{#if endDate}} - {{formatDate endDate "MMMM dd"}}{{/if}}
+    <b>{{formatDate startDate "MMMM d"}}
+        {{#if time}}
+        <span> @ {{time}}</span>
+        {{/if}}
+        {{#if endDate}} - {{formatDate endDate "d"}}{{/if}}
     </b>
+
     <div>{{description}}</div>
     {{#if location}}
     <div>

@@ -8,6 +8,12 @@
     },
     "announcements": [
         {
+            "description": "Children of the Promise Church Mental Health Seminar",
+            "startDate": "2024-07-27",
+            "time": "4pm",
+            "location": "1454 Greenwood St, Philadelphia, PA 19150"
+        },
+        {
             "description": "NYC SDB Church 50th Anniversary",
             "startDate": "2024-09-20",
             "endDate": "2024-09-22",
