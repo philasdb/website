@@ -8,6 +8,12 @@
     },
     "announcements": [
         {
+            "description": "Plainfield SDB Church Gospel Concert",
+            "startDate": "2024-08-17",
+            "time": "6pm",
+            "location": "501 Central Ave, Plainfield, NJ 07060"
+        },
+        {
             "description": "NYC SDB Church 50th Anniversary",
             "startDate": "2024-09-20",
             "endDate": "2024-09-22",
