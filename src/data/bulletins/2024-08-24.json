@@ -1,0 +1,42 @@
+{
+    "date":"2024-08-24",
+    "sabbathSchool":{
+        "topic":"Devoted to Good Works",
+        "study": "Titus 3:3-11",
+        "background": "Titus 3:3-11",
+        "devotional": "Ephesians 2:1-10"
+    },
+    "announcements": [
+        {
+            "description":"Youth Sabbath",
+            "startDate": "2024-08-31"
+        },
+        {
+            "description": "NYC SDB Church 50th Anniversary",
+            "startDate": "2024-09-20",
+            "endDate": "2024-09-22",
+            "location": "1904 Fulton Street, Brooklyn, NY 11233"
+        },
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "time": "4pm",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*"
+    ],
+    "thoughtOfTheDay": "Mattthew 6:28-29",
+    "openingSong": 426,
+    "responsiveReading": "Psalm 105",
+    "tithesAndOfferingSong": 370,
+    "scriptureReading": "Matthew 6:24-34",
+    "message": {
+        "title":"Stewardship Part II: God Provides Every One of Our Needs as We Seek His Kingdom First",
+        "speaker": "Brother Kevin Brey"
+    },
+    "closingSong": 16
+}
