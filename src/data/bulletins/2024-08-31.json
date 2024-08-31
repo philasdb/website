@@ -1,0 +1,42 @@
+{
+    "date":"2024-08-31",
+    "sabbathSchool":{
+        "topic":"Abram Builds and Alter at Mamre",
+        "study": "Genesis 13:8-18",
+        "background": "Genesis 12-13",
+        "devotional": "Phillipians 4: 10-19"
+    },
+    "announcements": [
+        {
+            "description":"Youth Sabbath",
+            "startDate": "2024-08-31"
+        },
+        {
+            "description": "NYC SDB Church 50th Anniversary",
+            "startDate": "2024-09-20",
+            "endDate": "2024-09-22",
+            "location": "1904 Fulton Street, Brooklyn, NY 11233"
+        },
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "time": "4pm",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*"
+    ],
+    "thoughtOfTheDay": "Psalm 145:4",
+    "openingSong": 284,
+    "responsiveReading": "Psalm 145:1-18",
+    "tithesAndOfferingSong": 421,
+    "scriptureReading": "Matthew 19:13-15",
+    "message": {
+        "title":"The Job of a Mother",
+        "speaker": "Pastor Kenroy Cruickshank"
+    },
+    "closingSong": 483
+}
