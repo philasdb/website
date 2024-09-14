@@ -1,0 +1,47 @@
+{
+    "date":"2024-09-07",
+    "sabbathSchool":{
+        "topic":"Solomon Dedicates the Temple",
+        "study": "1 Kings 8:22-53",
+        "background": "1 Kings 8:22-53",
+        "devotional": "Psalm 34:11-22"
+    },
+    "announcements": [
+        {
+            "description":"Communion Service",
+            "startDate": "2024-09-07"
+        },
+        {
+            "description": "NYC SDB Church 50th Anniversary",
+            "startDate": "2024-09-20",
+            "endDate": "2024-09-22",
+            "location": "1904 Fulton Street, Brooklyn, NY 11233"
+        },
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "time": "4pm",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*"
+    ],
+    "thoughtOfTheDay": "Psalm 37:9",
+    "openingSong": 236,
+    "responsiveReading": "Psalm 37",
+    "tithesAndOfferingSong": 347,
+    "scriptureReading": "John 1:29",
+    "message": {
+        "title":"The Lamb of God",
+        "speaker": "Pastor Kenroy Cruickshank"
+    },
+    "communion": {
+        "song1": 113,
+        "song2": 160,
+        "song3": 364
+    },
+    "closingSong": 309
+}
