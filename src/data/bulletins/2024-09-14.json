@@ -1,0 +1,39 @@
+{
+    "date":"2024-09-14",
+    "sabbathSchool":{
+        "topic":"Hezekiah's Prayer",
+        "study": "2 Kings 19:14-20, 29-31",
+        "background": "2 Kings 9:1-34",
+        "devotional": "Romans 8:29-39"
+    },
+    "announcements": [
+        {
+            "description": "NYC SDB Church 50th Anniversary",
+            "startDate": "2024-09-20",
+            "endDate": "2024-09-22",
+            "location": "1904 Fulton Street, Brooklyn, NY 11233"
+        },
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "time": "4pm",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Psalm 19:7",
+    "openingSong": 169,
+    "responsiveReading": "Psalm 19",
+    "tithesAndOfferingSong": 190,
+    "scriptureReading": "Isaiah 3:5-6",
+    "message": {
+        "title":"Substitute",
+        "speaker": "Pastor Kenroy Cruickshank"
+    },
+    "closingSong": 370
+}
