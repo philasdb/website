@@ -1,0 +1,43 @@
+{
+    "date":"2024-10-05",
+    "sabbathSchool":{
+        "topic":"Prayers of Repentance and Confession",
+        "study": "Psalm 51:1-4,10-12,15-17",
+        "background": "Psalm 51; 2 Samuel 11",
+        "devotional": "2 Conrinthians 7:5-11"
+    },
+    "announcements": [
+        {
+            "description": "Philadelphia SDB Church Concert",
+            "startDate": "2024-10-26",
+            "time": "4pm",
+            "location": "6841 Ardleigh St, Philadelphia, PA 19119"
+        },
+        {
+            "description": "Faith SDB Church Annual Rally",
+            "startDate": "2024-11-09",
+            "time": "5pm",
+            "location": "4230 White Plains Road, Bronx, NY 10466"
+        },
+        {
+            "description": "Youth Sabbath",
+            "startDate": "2024-11-30"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Ecclesiastes 3:12-13",
+    "openingSong": 457,
+    "responsiveReading": "Ecclesiastes 3:1-13",
+    "tithesAndOfferingSong": 370,
+    "scriptureReading": "Genesis 2:4-23",
+    "message": {
+        "title":"Stewardship Part III: God Gives Us the Gift of Being Able to Work",
+        "speaker": "Brother Kevin Brey"
+    },
+    "closingSong": 463
+}
