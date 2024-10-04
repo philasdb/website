@@ -82,6 +82,12 @@ const parsedData = JSON.parse(data);
 let date = format(parseISO(baseFileName), 'MM-dd-yyyy');
 const targetPath = path.join(__dirname, 'src', 'bulletin', `${date}.html`);
 
-buildBulletin(parsedData, targetPath).catch((error) => {
-    console.error(error);
-});
+buildBulletin(parsedData, targetPath)
+    .then(() => {
+        let indexPath = path.join(__dirname, 'src', 'bulletin', 'index.html')
+        fs.copyFileSync(targetPath, indexPath);
+        console.log('Build complete.');
+    })
+    .catch((error) => {
+        console.error(error);
+    });
