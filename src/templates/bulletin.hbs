@@ -91,6 +91,12 @@
                     <div><b>{{message.speaker}}</b> </div>
                 </div>
 
+                {{#if passages}}
+                <div class="item">
+                    {{> scripture title="Passages" reference=passages}}
+                </div>
+                {{/if}}
+
                 {{#if communion}}
                 <div class="item">
                     <div><b>Communion</b></div>
