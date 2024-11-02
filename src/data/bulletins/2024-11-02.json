@@ -1,0 +1,43 @@
+{
+    "date":"2024-11-02",
+    "sabbathSchool":{
+        "topic":"Confidence in God's Shepardiing",
+        "study": "Psalm 23",
+        "background": "Psalm 23;John 10:11-14",
+        "devotional": "John 10:1-10"
+    },
+    "announcements": [
+        {
+            "description": "Agape SDB Church Men on a Mission Concert of the Ages",
+            "startDate": "2024-11-02",
+            "time": "5pm",
+            "location": "11046 Farmers Blvd, St. Albans, NY 11412"
+        },
+        {
+            "description": "Faith SDB Church Annual Rally",
+            "startDate": "2024-11-09",
+            "time": "5pm",
+            "location": "4230 White Plains Road, Bronx, NY 10466"
+        },
+        {
+            "description": "Youth Sabbath",
+            "startDate": "2024-11-30"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Mark 16:15",
+    "openingSong": 146,
+    "responsiveReading": "Psalm 32",
+    "tithesAndOfferingSong": 378,
+    "scriptureReading": "1 Corinthians 10:31-11:1",
+    "message": {
+        "title":"Stewardship Part IV- \"Since God Gave Me the Ability to Work, What Should My Life's Work Be?\"",
+        "speaker": "Brother Kevin Brey"
+    },
+    "closingSong": 196
+}
