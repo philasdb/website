@@ -13,20 +13,29 @@ partialFiles.forEach(file => {
     Handlebars.registerPartial(name, template);
 });
 
-Handlebars.registerHelper('song', function (hymnNumber, options) {
-    const song = { hymnNumber: hymnNumber };
+Handlebars.registerHelper('song', function (data, options) {
 
-    if (song.hymnNumber) {
-        const hymn = hymnals[0].Hymns.find(h => h.Number === parseInt(song.hymnNumber));
-        if (hymn) {
-            song.title = hymn.Title;
-            song.url = hymn.Url;
-            song.hymnal = "Hymns of Faith";
-        }
+    if (data.title) {
+        const song = { hymnNumber: data.hymnNumber, title: data.title, url: data.url, hymnal: data.hymnal, artist: data.artist, additionalInfo: data.additionalInfo };
+        const template = Handlebars.compile(Handlebars.partials['song']);
+        return new Handlebars.SafeString(template(song));
     }
+    else {
 
-    const template = Handlebars.compile(Handlebars.partials['song']);
-    return new Handlebars.SafeString(template(song));
+        const song = { hymnNumber: data };
+
+        if (song.hymnNumber) {
+            const hymn = hymnals[0].Hymns.find(h => h.Number === parseInt(song.hymnNumber));
+            if (hymn) {
+                song.title = hymn.Title;
+                song.url = hymn.Url;
+                song.hymnal = "Hymns of Faith";
+            }
+        }
+
+        const template = Handlebars.compile(Handlebars.partials['song']);
+        return new Handlebars.SafeString(template(song));
+    }
 });
 
 Handlebars.registerHelper('encode', function (reference) {
