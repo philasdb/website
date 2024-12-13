@@ -1,0 +1,37 @@
+{
+    "date":"2024-12-14",
+    "sabbathSchool":{
+        "topic":"The Prophet Who Prepares the Way",
+        "study": "Luke 1:67-80",
+        "background": "Luke 1:5-23, 57-80",
+        "devotional": "Luke 1:5-17"
+    },
+    "announcements": [
+        {
+            "description": "Fundraising Children's Christmas Banquet",
+            "additionalInfo": "*Please donate unwrapped children's toys and blankets*",
+            "startDate": "2024-12-21",
+            "time": "4pm"
+        },
+        {
+            "description": "Communion Service",
+            "startDate": "2024-12-28"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Matthew 10:8",
+    "openingSong": 286,
+    "responsiveReading": "Psalm 122",
+    "tithesAndOfferingSong":426,
+    "scriptureReading": "Matthew 10:1-8",
+    "message": {
+        "title":"Stewardship Part V - God's General Principle of Giving",
+        "speaker": "Brother Kevin Brey"
+    },
+    "closingSong": 446
+}
