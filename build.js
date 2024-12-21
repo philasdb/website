@@ -1,11 +1,15 @@
-const Handlebars = require('handlebars');
-const fs = require('fs');
-const path = require('path');
-const hymnals = require('./src/data/hymnals.json');
-const bible = require('./bible');
-const { format, parseISO } = require('date-fns');
 
-const partialsDir = path.join(__dirname, './src/templates/partials');
+import Handlebars from 'handlebars';
+import fs from 'fs'
+import path from 'path';
+import { format, parseISO } from 'date-fns';
+
+import hymnals from './src/data/hymnals.json'  with { type: "json" };
+import * as bible from './bible.js';
+
+
+
+const partialsDir = path.join(import.meta.dirname, './src/templates/partials');
 const partialFiles = fs.readdirSync(partialsDir);
 partialFiles.forEach(file => {
     const name = path.basename(file, '.hbs');
@@ -56,7 +60,7 @@ Handlebars.registerHelper('scriptureText', function (reference, options) {
 
 async function buildBulletin(data, targetPath) {
 
-    let bulletinTemplatePath = path.join(__dirname, './src/templates/bulletin.hbs');
+    let bulletinTemplatePath = path.join(import.meta.dirname, './src/templates/bulletin.hbs');
 
     var template = fs.readFileSync(bulletinTemplatePath, "utf8");
 
@@ -89,11 +93,11 @@ const parsedData = JSON.parse(data);
 //const targetPath = path.join(__dirname, 'src', 'bulletin', `${baseFileName}.html`);
 
 let date = format(parseISO(baseFileName), 'MM-dd-yyyy');
-const targetPath = path.join(__dirname, 'src', 'bulletin', `${date}.html`);
+const targetPath = path.join(import.meta.dirname, 'src', 'bulletin', `${date}.html`);
 
 buildBulletin(parsedData, targetPath)
     .then(() => {
-        let indexPath = path.join(__dirname, 'src', 'bulletin', 'index.html')
+        let indexPath = path.join(import.meta.dirname, 'src', 'bulletin', 'index.html')
         fs.copyFileSync(targetPath, indexPath);
         console.log('Build complete.');
     })

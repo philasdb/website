@@ -1,4 +1,4 @@
-import('node-fetch');
+import fetch from 'node-fetch';
 
 async function getPassage(reference) {
     // Encode the reference for use in a URL
@@ -33,4 +33,4 @@ async function getPassage(reference) {
     }
 }
 
-module.exports = { getPassage };
+export { getPassage };
