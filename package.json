@@ -1,15 +1,17 @@
 {
+  "type": "module",
   "scripts": {
-    "prebuild": "node clean.js && node build-templates.js",
-    "prestart": "node clean.js && node build-templates.js",
-    "start": "parcel src/index.html src/**/*.html --no-cache",
-    "build": "parcel build src/index.html src/**/*.html --no-cache"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0",
     "date-fns": "^3.6.0",
+    "glob": "^11.0.0",
     "handlebars": "^4.7.8",
     "node-fetch": "^3.3.2",
-    "parcel": "^2.12.0"
+    "sass": "^1.83.0",
+    "vite": "^6.0.4",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }
