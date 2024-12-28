@@ -24,6 +24,14 @@ Handlebars.registerHelper('song', function (data, options) {
         const template = Handlebars.compile(Handlebars.partials['song']);
         return new Handlebars.SafeString(template(song));
     }
+    else if (data.hymnNumber && data.hymnalCode) {
+        const hymn = hymnals.find(h => h.Code === data.hymnalCode).Hymns.find(h => h.Number === parseInt(data.hymnNumber));
+        if (hymn) {
+            const song = { hymnNumber: hymn.Number, title: hymn.Title, url: hymn.Url, hymnal: data.hymnal };
+            const template = Handlebars.compile(Handlebars.partials['song']);
+            return new Handlebars.SafeString(template(song));
+        }
+    }
     else {
 
         const song = { hymnNumber: data };
