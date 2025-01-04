@@ -1,0 +1,31 @@
+{
+    "date":"2025-01-04",
+    "sabbathSchool":{
+        "topic":"The Lord Is King",
+        "study": "Psalm 10:12-18",
+        "background": "Psalm 9; 10",
+        "devotional": "1 Timothy 1:12-17"
+    },
+    "announcements": [
+        {
+            "description": "Prayer Meeting",
+            "startDate": "2025-01-06"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Psalm 136:6",
+    "openingSong": 357,
+    "responsiveReading": "Psalm 136",
+    "tithesAndOfferingSong":353,
+    "scriptureReading": "Luke 15:14-17",
+    "message": {
+        "title":"It is Time for You to Come to Your Senses",
+        "speaker": "Pastor Kenroy Cruickshank"
+    },
+    "closingSong": 351
+}
