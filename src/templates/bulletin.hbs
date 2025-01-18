@@ -45,10 +45,13 @@
                     <div><b>Prelude</b></div>
                 </div>
 
+                {{#if thoughtOfTheDay}}
                 <div class="item">
+
                     {{> scripture title="Thought for the Day" reference=thoughtOfTheDay}}
                     {{scriptureText thoughtOfTheDay}}
                 </div>
+                {{/if}}
 
                 <div class="item">
                     <div><b>Opening Song</b></div>
@@ -60,9 +63,25 @@
                     <div><b>Opening Prayer</b></div>
                 </div>
 
+                {{#if responsiveReading}}
                 <div class="item">
                     {{> scripture title="Responsive Reading" reference=responsiveReading}}
                 </div>
+                {{/if}}
+
+                {{#if heading}}
+                <div class="item">
+                    {{> heading}}
+                </div>
+                {{/if}}
+
+                {{#if presentations1}}
+                {{#each presentations1}}
+                <div class="item">
+                    {{> presentation}}
+                </div>
+                {{/each}}
+                {{/if}}
 
                 <div class="item">
 
@@ -74,9 +93,19 @@
                     {{ song tithesAndOfferingSong }}
                 </div>
 
+                {{#if presentations2}}
+                {{#each presentations2}}
+                <div class="item">
+                    {{> presentation}}
+                </div>
+                {{/each}}
+                {{/if}}
+
+                {{#if scriptureReading}}
                 <div class="item">
                     {{> scripture title="Scripture Reading" reference=scriptureReading}}
                 </div>
+                {{/if}}
 
                 <div class="item">
                     <div><b>Special Music</b></div>
@@ -86,11 +115,13 @@
                     {{/if}}
                 </div>
 
+                {{#if message}}
                 <div class="item">
                     <div><b>Message</b></div>
                     <em>{{message.title}}</em>
                     <div><b>{{message.speaker}}</b> </div>
                 </div>
+                {{/if}}
 
                 {{#if passages}}
                 <div class="item">
