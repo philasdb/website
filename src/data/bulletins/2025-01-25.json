@@ -8,6 +8,10 @@
     },
     "announcements": [
         {
+            "description": "Fasting Service",
+            "startDate": "2025-02-01"
+        },
+        {
             "description": "Easter/Resurrection Service",
             "startDate": "2025-04-19"
         },
