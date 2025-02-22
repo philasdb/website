@@ -1,0 +1,44 @@
+{
+    "date":"2025-02-22",
+    "sabbathSchool":{
+        "topic":"Kingdom Life",
+        "study": "Matthew 25:31-46",
+        "background": "Matthew 25",
+        "devotional": "Matthew 25:14-15, 19-30"
+    },
+    "announcements": [
+        {
+            "description": "Free Self-Defense Class for Women and Teen Girls",
+            "startDate": "2025-03-29",
+            "time":"5pm"
+        },
+        {
+            "description": "Easter/Resurrection Service",
+            "startDate": "2025-04-19"
+        },
+        {
+            "description": "Mother's Day Service",
+            "startDate": "2025-05-10"
+        },
+        {
+            "description": "Father's Day Service",
+            "startDate": "2025-06-14"
+        }
+    ],
+    "notes": [
+        "*If you are a guest, please sign the guest book in the front*",
+        "*After Lunch every Sabbath will be Vespers*",
+        "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
+        "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
+    ],
+    "thoughtOfTheDay": "Psalm 84:4",
+    "openingSong":308,
+    "responsiveReading":"Psalm 84",
+    "tithesAndOfferingSong":200,
+    "scriptureReading": "Luke 15:24-30",
+    "message": {
+        "title":"Problem in the Home",
+        "speaker": "Pastor Kenroy Cruickshank"
+    },
+    "closingSong":369
+}
