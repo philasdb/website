@@ -8,6 +8,10 @@
     },
     "announcements": [
         {
+            "description": "Youth Sabbath",
+            "startDate": "2025-03-29"
+        },
+        {
             "description": "Free Self-Defense Class for Women and Teen Girls",
             "startDate": "2025-03-29",
             "location":"1521 Bethlehem Pike, Flourtown, PA 19031",
