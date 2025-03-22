@@ -98,6 +98,13 @@
                 </div>
 
 
+
+                {{#if scriptureReading}}
+                <div class="item">
+                    {{> scripture title="Scripture Reading" reference=scriptureReading}}
+                </div>
+                {{/if}}
+
                 {{#if presentations2}}
                 {{#each presentations2}}
                 <div class="item">
@@ -106,9 +113,13 @@
                 {{/each}}
                 {{/if}}
 
-                {{#if scriptureReading}}
+
+                {{#if newMembers}}
                 <div class="item">
-                    {{> scripture title="Scripture Reading" reference=scriptureReading}}
+                    <div><b>New Members</b></div>
+                    {{#each newMembers}}
+                    <div>{{this}}</div>
+                    {{/each}}
                 </div>
                 {{/if}}
 
@@ -132,6 +143,14 @@
                 </div>
                 {{/if}}
 
+                {{#if presentations3}}
+                {{#each presentations3}}
+                <div class="item">
+                    {{> presentation}}
+                </div>
+                {{/each}}
+                {{/if}}
+
                 {{#if passages}}
                 <div class="item">
                     {{> scripture title="Passages" reference=passages}}
@@ -151,10 +170,12 @@
                 </div>
                 {{/if}}
 
+                {{#if closingSong}}
                 <div class="item">
                     <div><b>Closing Song</b></div>
                     {{ song closingSong }}
                 </div>
+                {{/if}}
 
                 <div class="item">
                     <div><b>Closing Prayer</b></div>
