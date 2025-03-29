@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZMXKFJVK9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MZMXKFJVK9');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philadelphia SDB Bulletin - {{formatDate date "MMMM dd, yyyy"}}</title>
@@ -129,10 +138,12 @@
                     {{ song specialMusic }}
                 </div>
                 {{/if}}
+                {{#if youngLeadersChurch}}
                 <div class="item">
                     <div><small> <b><i>*Children and young people separate into Young Leaders Church*</i></b> </small>
                     </div>
                 </div>
+                {{/if}}
                 {{#if message}}
                 <div class="item">
                     <div><b>Message</b></div>

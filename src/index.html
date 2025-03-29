@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZMXKFJVK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MZMXKFJVK9');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Philadelphia Seventh Day Baptist Church">
@@ -10,8 +21,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="sass/index.scss">
+  <style>
+    .live-indicator {
+      display: inline-block;
+      position: relative;
+    }
+
+    .live-indicator.red {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
 
 </head>
+
 
 <body>
   <header>
@@ -19,13 +55,19 @@
       <ul>
         <li><a href="#pastor">Our Pastor</a></li>
         <li><a href="#ministries">Ministries</a></li>
+        <li>
+          <div id="live-stream-status-indicator"></div>
+        </li>
         <li><a href="#donate">Donate</a></li>
         <li><a href="#visit">Visit Us</a></li>
+
       </ul>
     </nav>
+
   </header>
 
   <main>
+
     <img src="./img/cover_image.webp" id="main-image" class="centered" alt="Church Logo Cover" width="920px"
       height="512px">
 
@@ -130,8 +172,31 @@
       (267) 335-2987<br>
       philasdb@gmail.com<br>
     </address>
-    <p>&copy; Philadelphia Seventh Day Baptist Church, 2024</p>
+    <p>&copy; Philadelphia Seventh Day Baptist Church, 2025</p>
   </footer>
+
+
+
+  <template id="live-stream-offline">
+    <div id="live-stream-status">
+      <span id="live-stream-status-icon">⚪</span>
+      <span id="live-stream-status-text" style="cursor: pointer;">
+        <a href="./live" target="_blank">Livestream</a>
+      </span>
+    </div>
+  </template>
+
+  <template id="live-stream-online">
+    <div id="live-stream-status">
+      <span id="live-stream-status-icon" class="live-indicator red">🔴</span>
+      <span id="live-stream-status-text" style="cursor: pointer;">
+        <a href="./live" target="_blank"><strong>Livestream</strong></a>
+      </span>
+    </div>
+  </template>
+
+  <script src="index.js"></script>
+
 </body>
 
 </html>

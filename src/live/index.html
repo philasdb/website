@@ -2,8 +2,18 @@
 <html>
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZMXKFJVK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MZMXKFJVK9');
+  </script>
   <meta charset="utf-8">
   <title>Church Livestream</title>
+  <link rel="stylesheet" href="../sass/index.scss">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.22.0/video-js.css" rel="stylesheet" />
   <style>
     body {
@@ -24,24 +34,38 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
 
-  <div class="video-container">
-    <h1>Church Livestream</h1>
-    <video id="my-video" class="video-js" controls preload="auto" width="960px" height="600px"
-      poster="../img/cover_image.webp">
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a
-        web browser that
-        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-      </p>
-    </video>
-  </div>
+  </header>
+  <main>
+    <div class="video-container">
+      <h1>Church Livestream</h1>
+      <video id="my-video" class="video-js" controls preload="auto" width="960px" height="600px"
+        poster="../img/cover_image.webp">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
+    </div>
+  </main>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.22.0/video.min.js"></script>
   <script>
+
+    const url = 'https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8';
+    //const url = 'http://localhost:10000/hls/live/demo/output.m3u8';
+
     var player = videojs('my-video', {
       sources: [{
-        src: 'https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8',
+        src: url,
         type: 'application/x-mpegURL'
       }],
       autoplay: 'muted',
@@ -53,7 +77,7 @@
       console.log('Player error detected - attempting to recover');
       setTimeout(function () {
         player.src({
-          src: 'https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8',
+          src: url,
           type: 'application/x-mpegURL'
         });
         player.load();
