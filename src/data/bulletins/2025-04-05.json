@@ -26,16 +26,14 @@
         "*Prayer & Bible Study every Wednesday from 6-7:30pm*",
         "*Prayer Meeting every first Monday of the month at 7pm on Zoom*"
     ],
-    "thoughtOfTheDay": "John 14:18",
-    "openingSong":328,
-    "responsiveReading":"John 14:1-18",
-    "tithesAndOfferingSong":507,
-    "scriptureReading": "1 Samuel 18:4;1 Samuel 23:17",
+    "thoughtOfTheDay": "Genesis 2:2-3",
+    "openingSong":2,
+    "responsiveReading":"Psalm 19",
+    "tithesAndOfferingSong":37,
+    "scriptureReading": "Hebrews 4:8-11",
     "message": {
-        "title":"Plans for the Future",
+        "title":"Seven Days of Creation",
         "speaker": "Pastor Kenroy Cruickshank"
     },
-    "closingSong":{
-        "title":"Even at the Door"
-    }
+    "closingSong":16
 }

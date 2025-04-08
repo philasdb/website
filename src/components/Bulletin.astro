@@ -1,0 +1,188 @@
+---
+import "../assets/css/bulletin.css";
+import formatDate from "../lib/date";
+import Scripture from "./Scripture.astro";
+import Passage from "./Passage.astro";
+import Announcement from "./Announcement.astro";
+import Song from "./Song.astro";
+import type { Bulletin } from "../lib/types";
+
+const bulletin = Astro.props.bulletin as Bulletin;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Philadelphia Seventh Day Baptist Church | Bulletin | {
+                formatDate(bulletin.date, "MMMM dd, yyyy")
+            }
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <h1>{formatDate(bulletin.date, "MMMM d, yyyy")}</h1>
+                <section class="sabbath-school">
+                    <h2>Sabbath School @ 11am</h2>
+                    <div><b>Topic:</b> "{bulletin.sabbathSchool.topic}"</div>
+                    <Scripture
+                        title="Study"
+                        reference={bulletin.sabbathSchool.study}
+                    />
+                    <Scripture
+                        title="Background"
+                        reference={bulletin.sabbathSchool.background}
+                    />
+                    <Scripture
+                        title="Devotional"
+                        reference={bulletin.sabbathSchool.devotional}
+                    />
+                </section>
+                <section class="announcements">
+                    <h2>Announcements</h2>
+                    {
+                        bulletin.announcements.map((announcement) => {
+                            return <Announcement {...announcement} />;
+                        })
+                    }
+                </section>
+                {
+                    bulletin.notes.map((note) => (
+                        <p>
+                            <b>{note}</b>
+                        </p>
+                    ))
+                }
+            </div>
+            <div class="right-column">
+                <section>
+                    <div class="item">
+                        <h2>Divine Worship</h2>
+                    </div>
+
+                    <div class="item">
+                        <div><b>Prelude</b></div>
+                    </div>
+
+                    {
+                        bulletin.thoughtOfTheDay && (
+                            <div class="item">
+                                <Scripture
+                                    title="Thought of the Day"
+                                    reference={bulletin.thoughtOfTheDay}
+                                />
+                                <Passage reference={bulletin.thoughtOfTheDay} />
+                            </div>
+                        )
+                    }
+
+                    {
+                        bulletin.openingSong && (
+                            <div class="item">
+                                <div>
+                                    <b>Opening Song</b>
+                                </div>
+                                <Song reference={bulletin.openingSong} />
+                            </div>
+                        )
+                    }
+                    <div class="item">
+                        <div>
+                            <small> <b><i>*Prayer Requests*</i></b> </small>
+                        </div>
+                        <div><b>Opening Prayer</b></div>
+                    </div>
+                    {
+                        bulletin.responsiveReading && (
+                            <div class="item">
+                                <Scripture
+                                    title="Responsive Reading"
+                                    reference={bulletin.responsiveReading}
+                                />
+                            </div>
+                        )
+                    }
+
+                    <div class="item">
+                        <div>
+                            <b>Tithes and Offering</b>
+                            <span class="hide-on-print donate-link">
+                                <a
+                                    href="https://philasdb.org/#donate"
+                                    target="_blank">Donate</a
+                                >
+                            </span>
+                        </div>
+                        <Song reference={bulletin.tithesAndOfferingSong} />
+                        <div class="item">
+                            <div><b>Prayer for Tithes and Offering</b></div>
+                        </div>
+                        {
+                            bulletin.scriptureReading && (
+                                <div class="item">
+                                    <Scripture
+                                        title="Scripture Reading"
+                                        reference={bulletin.scriptureReading}
+                                    />
+                                </div>
+                            )
+                        }
+                        {
+                            bulletin.specialMusic && (
+                                <div class="item">
+                                    <Song reference={bulletin.specialMusic} />
+                                </div>
+                            )
+                        }
+                        <div class="item">
+                            <div>
+                                <small>
+                                    <b
+                                        ><i
+                                            >*Children and young people separate
+                                            into Young Leaders Church*</i
+                                        ></b
+                                    >
+                                </small>
+                            </div>
+                        </div>
+                        {
+                            bulletin.message && (
+                                <div class="item">
+                                    <div>
+                                        <b>Message</b>
+                                    </div>
+                                    <em>{bulletin.message.title}</em>
+                                    <div>
+                                        <b>{bulletin.message.speaker}</b>{" "}
+                                    </div>
+                                </div>
+                            )
+                        }
+                        {
+                            bulletin.closingSong && (
+                                <div class="item">
+                                    <div>
+                                        <b>Closing Song</b>
+                                    </div>
+                                    <Song reference={bulletin.closingSong} />
+                                </div>
+                            )
+                        }
+
+                        <div class="item">
+                            <div><b>Closing Prayer</b></div>
+                        </div>
+
+                        <div class="item">
+                            <div><b>Benediction</b></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

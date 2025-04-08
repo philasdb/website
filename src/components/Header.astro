@@ -1,0 +1,56 @@
+---
+import LivestreamLink from "./LivestreamLink";
+---
+
+<header
+    style="position: fixed; top: 0; width:100%; background-color: white; z-index: 1000; padding: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
+>
+    <nav class="navbar-full">
+        <ul>
+            <li>
+                <a href="/"
+                    ><strong
+                        >PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong
+                    ></a
+                >
+            </li>
+        </ul>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li>
+                <LivestreamLink
+                    url="https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8"
+                    client:load
+                />
+            </li>
+            <li><a href="/giving">GIVING</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar-mobile">
+        <ul>
+            <li>
+                <strong>PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" class="secondary"></a></li>
+        </ul>
+        <ul>
+            <li>
+                <details class="dropdown">
+                    <summary><strong>MENU</strong></summary>
+                    <ul dir="rtl">
+                        <li><a href="/"><strong>HOME</strong></a></li>
+                        <li><a href="/about"><strong>ABOUT</strong></a></li>
+                        <li>
+                            <a href="/livestream"><strong>LIVESTREAM</strong></a
+                            >
+                        </li>
+                        <li><a href="/giving"><strong>GIVING</strong></a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </nav>
+</header>
