@@ -1,5 +1,8 @@
 ---
 import LivestreamLink from "./LivestreamLink";
+
+const url = "https://psdb-livestream.fly.dev/api/status";
+//const url = "http://localhost:10000/api/status";
 ---
 
 <header
@@ -19,10 +22,7 @@ import LivestreamLink from "./LivestreamLink";
             <li><a href="/">HOME</a></li>
             <li><a href="/about">ABOUT</a></li>
             <li>
-                <LivestreamLink
-                    url="https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8"
-                    client:load
-                />
+                <LivestreamLink url={url} client:load />
             </li>
             <li><a href="/giving">GIVING</a></li>
         </ul>

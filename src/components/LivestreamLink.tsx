@@ -13,7 +13,8 @@ export default function LivestreamLink(props: LivestreamLinkProps) {
     async function checkLiveStatus() {
       try {
         const response = await fetch(props.url);
-        if (response.status === 200) {
+        const data = await response.json();
+        if (data && data.isLive) {
           setIsLive(true);
         } else {
           setIsLive(false);

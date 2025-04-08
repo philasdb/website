@@ -3,6 +3,7 @@ import "@picocss/pico/css/pico.min.css";
 import "../assets/css/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import coverImage from "../assets/img/cover_image.webp";
 
 const { title, canonical } = Astro.props;
 
@@ -43,6 +44,17 @@ const canonicalUrl = `https://philasdb.org/${canonical}`;
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 		<title>Philadelphia Seventh Day Baptist Church | {title}</title>
+
+		{
+			title === "Home" && (
+				<link
+					rel="preload"
+					as="image"
+					href={coverImage.src}
+					type="image/webp"
+				/>
+			)
+		}
 	</head>
 	<body>
 		<Header />
