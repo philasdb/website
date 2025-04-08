@@ -4,7 +4,9 @@ import "../assets/css/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title } = Astro.props;
+const { title, canonical } = Astro.props;
+
+const canonicalUrl = `https://philasdb.org/${canonical}`;
 ---
 
 <!doctype html>
@@ -25,15 +27,26 @@ const { title } = Astro.props;
 			gtag("config", "G-MZMXKFJVK9");
 		</script>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="light dark" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="Philadelphia Seventh Day Baptist Church"
+		/>
+		<meta name="author" content="Philadelphia Seventh Day Baptist Church" />
+		<meta
+			name="keywords"
+			content="Philadelphia Seventh Day Baptist Church, SDB, Sabbath worship, Mt. Airy, Saturday worship, Bible study, Philadelphia church, Christian, seventh day baptist"
+		/>
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
 		<title>Philadelphia Seventh Day Baptist Church | {title}</title>
 	</head>
 	<body>
 		<Header />
-		<main class="container" style="margin-top: 100px;">
+		<main class="container" style="margin-top: 80px;">
 			<slot />
 		</main>
 		<Footer />

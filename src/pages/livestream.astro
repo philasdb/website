@@ -1,11 +1,10 @@
 ---
 import "video.js/dist/video-js.css";
 import MainLayout from "../layouts/MainLayout.astro";
-//import Image from "astro/components/Image.astro";
 import coverImage from "../assets/img/cover_image.webp";
 ---
 
-<MainLayout title="Livestream">
+<MainLayout title="Livestream" canonical="livestream">
     <nav aria-label="breadcrumb">
         <ul>
             <li><a href="/">Home</a></li>
@@ -15,8 +14,6 @@ import coverImage from "../assets/img/cover_image.webp";
     <section>
         <h1>LIVESTREAM</h1>
         <video
-
-            
             id="my-video"
             class="video-js"
             style="position: relative; width: 100%; height: auto; aspect-ratio: 16/9;"
