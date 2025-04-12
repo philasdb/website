@@ -1,0 +1,47 @@
+---
+import Bulletin from "../../components/Bulletin.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+import formatDate from "../../lib/date";
+
+// Get all bulletins and sort by date (newest first)
+const bulletins = await getCollection("bulletins");
+const sortedBulletins = bulletins.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+
+// Get the latest bulletin
+const latestBulletin =
+  sortedBulletins.length > 0 ? sortedBulletins[0].data : null;
+
+// This function is still needed for the [date].astro page
+export async function getStaticPaths() {
+  return bulletins.map((bulletin) => {
+    return {
+      params: { date: bulletin.data.date },
+      props: bulletin.data,
+    };
+  });
+}
+
+const formattedDate = latestBulletin
+  ? formatDate(latestBulletin.date, "MMMM dd, yyyy")
+  : "";
+---
+
+<MainLayout title={formattedDate}>
+  <div>
+    {
+      latestBulletin ? (
+        <div>
+          <Bulletin bulletin={latestBulletin} />
+        </div>
+      ) : (
+        <article>
+          <h1>No bulletins available</h1>
+          <p>Check back later for upcoming service bulletins.</p>
+        </article>
+      )
+    }
+  </div>
+</MainLayout>
