@@ -9,6 +9,8 @@ import coverImage from "../assets/img/cover_image.webp";
   >
     <Picture
       style="width: 100%; height: 100%; object-fit: cover;"
+      widths={[480, 768, 925]}
+      sizes="(max-width: 925px) 100vw, 925px"
       src={coverImage}
       formats={["avif", "webp", "jpg"]}
       alt="Philadelphia Seventh Day Baptist Church"
