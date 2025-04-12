@@ -44,17 +44,6 @@ const canonicalUrl = `https://philasdb.org/${canonical}`;
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 		<title>Philadelphia Seventh Day Baptist Church | {title}</title>
-
-		{
-			title === "Home" && (
-				<link
-					rel="preload"
-					as="image"
-					href={coverImage.src}
-					type="image/webp"
-				/>
-			)
-		}
 	</head>
 	<body>
 		<Header />

@@ -3,51 +3,78 @@ import LivestreamLink from "./LivestreamLink";
 
 const url = "https://psdb-livestream.fly.dev/api/status";
 //const url = "http://localhost:10000/api/status";
+import youtubeIcon from "../assets/img/youtube.png";
+import facebookIcon from "../assets/img/facebook.png";
+import Picture from "astro/components/Picture.astro";
 ---
 
 <header
-    style="position: fixed; top: 0; width:100%; background-color: white; z-index: 1000; padding: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
+  style="position: fixed; top: 0; width:100%; background-color: white; z-index: 1000; padding: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"
 >
-    <nav class="navbar-full">
-        <ul>
+  <nav class="navbar-full">
+    <ul>
+      <li>
+        <a href="/"
+          ><strong>PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong></a
+        >
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a
+          href="https://www.youtube.com/@PhiladelphiaSDBChurch"
+          target="_blank"
+        >
+          <Picture
+            src={youtubeIcon}
+            formats={["avif", "webp", "jpg"]}
+            alt="YouTube"
+            width={64}
+            height={64}
+          />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/PhilaSDB/" target="_blank">
+          <Picture
+            src={facebookIcon}
+            formats={["avif", "webp", "jpg"]}
+            alt="Facebook"
+            width={48}
+            height={48}
+          />
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/about">ABOUT</a></li>
+      <li>
+        <LivestreamLink url={url} client:load />
+      </li>
+      <li><a href="/giving">GIVING</a></li>
+    </ul>
+  </nav>
+  <nav class="navbar-mobile">
+    <ul>
+      <li>
+        <strong>PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <details class="dropdown">
+          <summary><strong>MENU</strong></summary>
+          <ul dir="rtl">
+            <li><a href="/"><strong>HOME</strong></a></li>
+            <li><a href="/about"><strong>ABOUT</strong></a></li>
             <li>
-                <a href="/"
-                    ><strong
-                        >PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong
-                    ></a
-                >
+              <a href="/livestream"><strong>LIVESTREAM</strong></a>
             </li>
-        </ul>
-        <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/about">ABOUT</a></li>
-            <li>
-                <LivestreamLink url={url} client:load />
-            </li>
-            <li><a href="/giving">GIVING</a></li>
-        </ul>
-    </nav>
-    <nav class="navbar-mobile">
-        <ul>
-            <li>
-                <strong>PHILADELPHIA 7<sup>th</sup> DAY BAPTIST CHURCH</strong>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <details class="dropdown">
-                    <summary><strong>MENU</strong></summary>
-                    <ul dir="rtl">
-                        <li><a href="/"><strong>HOME</strong></a></li>
-                        <li><a href="/about"><strong>ABOUT</strong></a></li>
-                        <li>
-                            <a href="/livestream"><strong>LIVESTREAM</strong></a
-                            >
-                        </li>
-                        <li><a href="/giving"><strong>GIVING</strong></a></li>
-                    </ul>
-                </details>
-            </li>
-        </ul>
-    </nav>
+            <li><a href="/giving"><strong>GIVING</strong></a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
 </header>
