@@ -1,5 +1,5 @@
 {
-  "name": "psdb-astro",
+  "name": "philasdb-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,6 @@
   "dependencies": {
     "@astrojs/react": "^4.2.3",
     "@astrojs/sitemap": "^3.3.0",
-    "@picocss/pico": "^2.1.1",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
     "@types/video.js": "^7.3.58",

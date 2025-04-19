@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { Image } from "astro:assets";
-import cashappImage from "../assets/img/cashapp.webp";
+import { Picture } from "astro:assets";
+import cashappImage from "../images/cashapp.webp";
 ---
 
 <MainLayout title="Giving" canonical="giving">
@@ -36,8 +36,9 @@ import cashappImage from "../assets/img/cashapp.webp";
                 >
             </div>
             <a href="https://cash.app/$philasdb" target="_blank">
-                <Image
+                <Picture
                     src={cashappImage}
+                    formats={["avif", "webp", "jpg"]}
                     width="256"
                     height="256"
                     id="cashapp"
