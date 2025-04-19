@@ -60,10 +60,6 @@ const bulletin = Astro.props.bulletin as Bulletin;
             <h2>Divine Worship</h2>
           </div>
 
-          <div class="item">
-            <div><b>Prelude</b></div>
-          </div>
-
           {
             bulletin.thoughtOfTheDay && (
               <div class="item">
@@ -160,6 +156,33 @@ const bulletin = Astro.props.bulletin as Bulletin;
               )
             }
             {
+              bulletin.communion && (
+                <div class="item">
+                  <div>
+                    <b>Communion</b>
+                    <small>
+                      <em>
+                        {bulletin.communion.description
+                          ? bulletin.communion.description
+                          : ""}
+                      </em>
+                    </small>
+                  </div>
+                  <div>
+                    <small>
+                      <em>
+                        Participation is open to all who are in good
+                        relationship with the Lord
+                      </em>
+                    </small>
+                  </div>
+                  {bulletin.communion.songs.map((song) => {
+                    return <Song reference={song} />;
+                  })}
+                </div>
+              )
+            }
+            {
               bulletin.closingSong && (
                 <div class="item">
                   <div>
@@ -171,11 +194,7 @@ const bulletin = Astro.props.bulletin as Bulletin;
             }
 
             <div class="item">
-              <div><b>Closing Prayer</b></div>
-            </div>
-
-            <div class="item">
-              <div><b>Benediction</b></div>
+              <div><b>Closing Prayer & Benediction</b></div>
             </div>
           </div>
         </section>
