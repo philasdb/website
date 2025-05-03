@@ -1,10 +1,10 @@
 {
-    "date":"2025-04-26",
+    "date":"2025-05-03",
     "sabbathSchool":{
-        "topic":"The Day of Atonement",
-        "study": "Revelation 5:1-10",
-        "background": "Revelation 5",
-        "devotional": "Psalm 118:15-29"
+        "topic":"David's Sacrifice",
+        "study": "1 Chronicles 21:14-30",
+        "background": "1 Chronicles 21:1-22:1",
+        "devotional": "2 Peter 3:11-18"
     },
     "announcements": [
         {
@@ -18,7 +18,9 @@
         },
         {
             "description":"Visit from Pastor Andrew Samuels, Pastor Canaan Phiri and Pastor John Ryakitimbo",
-            "startDate":"2025-05-13"
+            "startDate":"2025-05-13",
+            "time":"7:00 PM",
+            "additionalInfo":"*Will also be on Zoom*"
         },
         {
             "description":"Eastern Association Meeting",
@@ -40,15 +42,14 @@
         "*Please pray for Brother Gayle's Family*",
         "*If you are a guest, please sign the guest book in the front*"
     ],
-    "thoughtOfTheDay": "Psalm 50:10-11",
-    "openingSong":91,
-    "responsiveReading":"Psalm 50",
-    "tithesAndOfferingSong":81,
-    "specialMusic": 215,
-    "scriptureReading": "Matthew 26:36-50",
+    "thoughtOfTheDay": "Ecclesiastes 11:5",
+    "openingSong":380,
+    "responsiveReading":"Psalm 3",
+    "tithesAndOfferingSong":209,
+    "scriptureReading": "Jeremiah 20:7-18",
     "message": {
-        "title":"Spiritual Warfare Part. 2",
-        "speaker": "Pastor Kenroy Cruickshank"
+        "title":"What Is a Successful Ministry?",
+        "speaker": "Deacon Edson Barrett"
     },
-    "closingSong":179
+    "closingSong":465
 }
