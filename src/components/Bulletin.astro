@@ -106,7 +106,7 @@ const bulletin = Astro.props.bulletin as Bulletin;
                 <a href="/giving" target="_blank">Giving (Click Here)</a>
               </span>
             </div>
-            <Song reference={bulletin.tithesAndOfferingSong} />
+            <Song reference={bulletin.tithesAndOfferingSong} hymnalCode={bulletin.tithesAndOfferingSong.hymnCode} />
             <div class="item">
               <div><b>Prayer for Tithes and Offering</b></div>
             </div>
@@ -126,7 +126,7 @@ const bulletin = Astro.props.bulletin as Bulletin;
                   <div>
                     <b>Special Music</b>
                   </div>
-                  <Song reference={bulletin.specialMusic} />
+                  <Song reference={bulletin.specialMusic}  />
                 </div>
               )
             }

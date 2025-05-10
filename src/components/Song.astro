@@ -27,6 +27,17 @@ if (typeof reference === "number") {
     }
 } else {
     song = reference;
+
+    if (hymnalCode) {
+        const hymnal = hymnals.find((h) => h.Code === hymnalCode);
+        const hymn = hymnal?.Hymns?.find((h) => h.Number === song.hymnNumber);
+        if (hymnal) {
+            song.hymnal = hymnal.Name;
+            song.url = hymn?.Url;
+            song.hymnNumber = hymn?.Number;
+            song.title = hymn?.Title;
+        }
+    }
 }
 ---
 
