@@ -1,3 +1,11 @@
+// Example usage of BibleReader in an Astro project
+import BibleReader from './bible-reader.js';
+
+// Initialize the Bible reader with your OSIS XML file path
+const bible = new BibleReader('./eng-kjv.osis.xml');
+
+
+
 
 
 interface Passage {
@@ -12,21 +20,25 @@ interface Passage {
 }
 
 export async function getPassage(reference: string, translation: string = 'kjv'): Promise<Passage | null> { 
-    // Encode the reference for use in a URL
-    const encodedReference = encodeURIComponent(reference);
-    const url = `https://bible-api.com/${encodedReference}?translation=${translation}`;
-
     try {
-        const response = await fetch(url);
+        const data = bible.getReference(reference);
+        
+        // Check if data is valid and has verses
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            console.error(`No verses found for reference: ${reference}`);
+            return null;
+        }
+        
+        const formattedData = bible.formatResponse(data, reference);
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status} reference: ${encodedReference}`);
+        // Check if formattedData has the expected structure
+        if (!formattedData || !formattedData.verses || !Array.isArray(formattedData.verses)) {
+            console.error(`Invalid formatted data for reference: ${reference}`);
+            return null;
         }
 
-        const data = await response.json();
-
         // Structure the verses
-        const verses = data.verses.map( (v:any) => ({
+        const verses = formattedData.verses.map((v: any) => ({
             book_name: v.book_name,
             chapter: v.chapter,
             verse: v.verse,
@@ -34,9 +46,9 @@ export async function getPassage(reference: string, translation: string = 'kjv')
         }));
 
         return {
-            reference: data.reference,
+            reference: formattedData.reference || reference,
             verses: verses,
-            text: data.text.trim()
+            text: formattedData.text.trim()
         };
     } catch (error) {
         console.error(`Error fetching Bible passage: ${error}`);
