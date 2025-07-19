@@ -121,14 +121,16 @@ const bulletin = Astro.props.bulletin as Bulletin;
               )
             }
             {
-              bulletin.specialMusic && (
-                <div class="item">
+              <div class="item">
                   <div>
                     <b>Special Music</b>
                   </div>
-                  <Song reference={bulletin.specialMusic}  />
-                </div>
-              )
+                  {
+                    bulletin.specialMusic && (
+                      <Song reference={bulletin.specialMusic}  />
+                    )
+                  }
+              </div>
             }
             <div class="item">
               <div>
