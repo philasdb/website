@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const YOUTUBE_API_URL = "https://content-youtube.googleapis.com/youtube/v3/search?type=video&order=date&eventType=completed&channelId=UCtQ_XJELDHnjEolMjmIVpHw&maxResults=50&part=snippet&key=AIzaSyBeo4NGA__U6Xxy-aBE6yFm19pgq8TY-TM";
+const YOUTUBE_API_URL = "https://content-youtube.googleapis.com/youtube/v3/search?type=video&order=date&eventType=completed&channelId=UCtQ_XJELDHnjEolMjmIVpHw&maxResults=50&part=snippet&key=AIzaSyCGsp2PD5EuQgFkonuKQM-9ieCr2bhCY0M";
 
 function formatDate(dateString) {
   const date = new Date(dateString);
