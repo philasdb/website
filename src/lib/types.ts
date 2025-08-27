@@ -49,4 +49,5 @@ export interface Bulletin {
   message?: Message;
   communion?: Communion;
   closingSong?: number | Song;
+  youth?: boolean;
 }

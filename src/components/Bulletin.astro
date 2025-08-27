@@ -84,6 +84,11 @@ const bulletin = Astro.props.bulletin as Bulletin;
           }
           <div class="item">
             <div>
+              <b>Welcome of New Visitors</b>
+            </div>
+          </div>
+          <div class="item">
+            <div>
               <small> <b><i>*Prayer Requests*</i></b> </small>
             </div>
             <div><b>Opening Prayer</b></div>
@@ -132,18 +137,16 @@ const bulletin = Astro.props.bulletin as Bulletin;
                   }
               </div>
             }
-            <div class="item">
-              <div>
-                <small>
-                  <b
-                    ><i
-                      >*Children and young people separate into Young Leaders
-                      Church*</i
-                    ></b
-                  >
-                </small>
+            {bulletin.youth && (
+              <div class="item">
+                <div>
+                  <small>
+                    <b><i>*Children and young people separate into Young Leaders
+                        Church*</i></b>
+                  </small>
+                </div>
               </div>
-            </div>
+            )}
             {
               bulletin.message && (
                 <div class="item">
