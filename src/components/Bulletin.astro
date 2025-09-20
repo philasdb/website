@@ -59,6 +59,13 @@ const bulletin = Astro.props.bulletin as Bulletin;
           <div class="item">
             <h2>Divine Worship</h2>
           </div>
+          {
+            bulletin.worshipLeader && (
+              <div class="item">
+                <b>Worship Leader:</b> {bulletin.worshipLeader}
+              </div>
+            )
+          }
 
           {
             bulletin.thoughtOfTheDay && (

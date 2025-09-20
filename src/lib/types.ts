@@ -40,6 +40,7 @@ export interface Bulletin {
   sabbathSchool: SabbathSchoolLesson;
   announcements: Announcement[];
   notes: string[];
+  worshipLeader?: string;
   thoughtOfTheDay: string;
   openingSong: number | Song;
   responsiveReading: string;
