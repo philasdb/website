@@ -12,17 +12,61 @@ import MainLayout from "../../../layouts/MainLayout.astro";
         <div style="margin-bottom: 0.75rem;"><strong>Time:</strong> <span style="color: #6c2eb7;">4:00 PM</span></div>
         <div style="margin-bottom: 0.75rem;"><strong>Location:</strong> 6841 Ardleigh Street, Philadelphia, PA 19119</div>
       </div>
-      <div style="background: #e9d8fd; border-radius: 1rem; padding: 1rem 1.5rem; margin-bottom: 1.5rem;">
-        <h2 style="color: #6c2eb7; font-size: 1.3rem; margin-bottom: 0.5rem;">Tickets</h2>
-        <div style="margin-bottom: 0.5rem;">Ages 17 &amp; Older: <strong>$20</strong></div>
-        <div style="margin-bottom: 0.5rem;">Ages 5-16: <strong>$10</strong></div>
-        <div style="margin-bottom: 0.5rem;">Under 5 years: <strong>Free</strong></div>
+      <div style="background: #f8f9fa; border-radius: 0.75rem; padding: 1rem; margin-bottom: 1.5rem; border-left: 3px solid #6c2eb7;">
+        <div style="margin-bottom: 0.5rem;"><strong>Tickets:</strong> $20 (17+), $10 (5-16), Free (under 5)</div>
+        <div style="color: #666; font-size: 0.9rem;">Refreshments available for purchase</div>
       </div>
-      <div style="background: #fff3cd; border-left: 4px solid #ffcb05; padding: 1rem 1.5rem; margin-bottom: 1.5rem; border-radius: 0.5rem;">
-        <p style="margin: 0; color: #856404; font-style: italic;">💡 <strong>Note:</strong> Refreshments will be available for purchase.</p>
-      </div>
-      <div style="margin-bottom: 1.5rem;">
-        <strong>RSVP:</strong> <a href="mailto:philasdb@gmail.com" style="color: #6c2eb7; text-decoration: underline;">philasdb@gmail.com</a>
+      <!-- Streaming Links Section -->
+      <div style="background: #f0f8ff; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; border: 2px solid #e6f3ff;">
+        <h2 style="color: #6c2eb7; font-size: 1.4rem; margin-bottom: 1rem; text-align: center;">Join Us Online</h2>
+        
+        <!-- Zoom Link -->
+        <div style="background: #fff; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h3 style="color: #2d5aa0; font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center;">
+            <span style="margin-right: 0.5rem;">📹</span> Zoom Meeting
+          </h3>
+          <div style="margin-bottom: 0.75rem;">
+            <strong>Meeting ID:</strong> 839 4792 5443<br>
+            <strong>Passcode:</strong> 945577
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <strong>One-tap mobile:</strong><br>
+            <a href="tel:+19294362866,,83947925443#,,,,*945577#" style="color: #2d5aa0; text-decoration: none; font-family: monospace; font-size: 0.9rem;">+1 (929) 436-2866</a><br>
+            <a href="tel:+13017158592,,83947925443#,,,,*945577#" style="color: #2d5aa0; text-decoration: none; font-family: monospace; font-size: 0.9rem;">+1 (301) 715-8592</a>
+          </div>
+          <a href="https://us02web.zoom.us/j/83947925443?pwd=Yy0OAWxeb14a80NqjYBpa4JmXft5da.1" 
+             style="display: inline-block; background: #2d5aa0; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: background-color 0.3s;"
+             onmouseover="this.style.backgroundColor='#1e3d6b'" 
+             onmouseout="this.style.backgroundColor='#2d5aa0'">
+            Join Zoom Meeting
+          </a>
+        </div>
+        
+        <!-- YouTube Live -->
+        <div style="background: #fff; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h3 style="color: #cc0000; font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center;">
+            <span style="margin-right: 0.5rem;">📺</span> YouTube Live
+          </h3>
+          <a href="https://youtube.com/live/6LLhq5QE7LQ?feature=share" 
+             style="display: inline-block; background: #cc0000; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: background-color 0.3s;"
+             onmouseover="this.style.backgroundColor='#a00000'" 
+             onmouseout="this.style.backgroundColor='#cc0000'">
+            Watch on YouTube
+          </a>
+        </div>
+        
+        <!-- Facebook Live -->
+        <div style="background: #fff; border-radius: 0.75rem; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <h3 style="color: #1877f2; font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center;">
+            <span style="margin-right: 0.5rem;">📘</span> Facebook Live
+          </h3>
+          <a href="https://www.facebook.com/PhilaSDB/live_videos/" 
+             style="display: inline-block; background: #1877f2; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: background-color 0.3s;"
+             onmouseover="this.style.backgroundColor='#0d5bb8'" 
+             onmouseout="this.style.backgroundColor='#1877f2'">
+            Watch on Facebook
+          </a>
+        </div>
       </div>
     </div>
   </section>
