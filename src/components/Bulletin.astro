@@ -194,6 +194,16 @@ const bulletin = Astro.props.bulletin as Bulletin;
                 </div>
               )
             }
+            {bulletin.itemAfterMessage &&
+              <div class="item">
+                <div>
+                  {bulletin.itemAfterMessageSong && <Song reference={bulletin.itemAfterMessageSong} />}
+                  <b>{bulletin.itemAfterMessage}</b>
+                </div>
+              </div>
+
+            }
+
             {
               bulletin.closingSong && (
                 <div class="item">

@@ -51,4 +51,7 @@ export interface Bulletin {
   communion?: Communion;
   closingSong?: number | Song;
   youth?: boolean;
+
+  itemAfterMessage?: string;
+  itemAfterMessageSong?: number | Song;
 }

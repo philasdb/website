@@ -11,7 +11,7 @@ interface Props {
 
 const { reference, hymnalCode } = Astro.props as Props;
 
-var song = null;
+var song: any = null;
 
 if (typeof reference === "number") {
     const code = hymnalCode || DEFAULT_HYMNAL_CODE;
@@ -42,7 +42,7 @@ if (typeof reference === "number") {
 ---
 
 <div class="song">
-    {song && <em>{song.title}</em>}
+    {song && (song.url && song.hymnNumber === undefined) ? <a href={song.url} target="_blank">{song.title}</a> : <em>{song.title}</em>}
     {
         song?.hymnNumber && (
             <div>
