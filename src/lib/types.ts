@@ -35,7 +35,21 @@ export interface Communion {
   songs: number[];
 }
 
-export interface Bulletin {
+// Worship item types for flexible service order (v2)
+export type WorshipItem =
+  | { type: "worshipLeader"; name: string }
+  | { type: "thoughtOfTheDay"; reference: string; presentedBy?: string }
+  | { type: "song"; label: string; song: number | Song; presentedBy?: string }
+  | { type: "text"; label: string; content?: string; italic?: boolean; small?: boolean; presentedBy?: string }
+  | { type: "scripture"; label: string; reference: string; showPassage?: boolean; presentedBy?: string }
+  | { type: "message"; message: Message }
+  | { type: "communion"; communion: Communion }
+  | { type: "custom"; label: string; content?: string; song?: number | Song; presentedBy?: string }
+  | { type: "tithesAndOffering"; song: number | Song; scriptureReading?: string; specialMusic?: number | Song; presentedBy?: string };
+
+// Legacy bulletin format (v1)
+export interface BulletinV1 {
+  version?: 1;
   date: string;
   sabbathSchool: SabbathSchoolLesson;
   announcements: Announcement[];
@@ -51,7 +65,19 @@ export interface Bulletin {
   communion?: Communion;
   closingSong?: number | Song;
   youth?: boolean;
-
   itemAfterMessage?: string;
   itemAfterMessageSong?: number | Song;
 }
+
+// New flexible bulletin format (v2)
+export interface BulletinV2 {
+  version: 2;
+  date: string;
+  sabbathSchool: SabbathSchoolLesson;
+  announcements: Announcement[];
+  notes: string[];
+  worshipService: WorshipItem[];
+  youth?: boolean;
+}
+
+export type Bulletin = BulletinV1 | BulletinV2;
