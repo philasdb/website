@@ -78,4 +78,14 @@ body {
         display: none;
     }
 
+    /* Reduce spacing between items to fit more on page */
+    .item {
+        margin-top: 3px;
+    }
+
+    /* Make presenter names smaller to save space */
+    .item i {
+        font-size: 0.85em;
+    }
+
 }
