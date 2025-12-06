@@ -5,57 +5,55 @@ import coverImage from "../images/cover_image.webp";
 ---
 
 <MainLayout title="Livestream" canonical="livestream">
-    <nav aria-label="breadcrumb">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li>Livestream</li>
-        </ul>
-    </nav>
-    <section>
-        <video
-            id="my-video"
-            class="video-js"
-            style="position: relative; width: 100%; height: auto; aspect-ratio: 16/9;"
-            controls
-            preload="auto"
-            poster={coverImage.src}
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>Livestream</li>
+    </ul>
+  </nav>
+  <section>
+    <video
+      id="my-video"
+      class="video-js"
+      style="position: relative; width: 100%; height: auto; aspect-ratio: 16/9;"
+      controls
+      preload="auto"
+      poster={coverImage.src}
+    >
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
         >
-            <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider
-                upgrading to a web browser that
-                <a
-                    href="https://videojs.com/html5-video-support/"
-                    target="_blank">supports HTML5 video</a
-                >
-            </p>
-        </video>
-    </section>
-    <script>
-        const url =
-            "https://psdb-livestream-gateway-production.up.railway.app/api/playlist.m3u8";
-        import videojs from "video.js";
-        var player = videojs("my-video", {
-            sources: [
-                {
-                    src: url,
-                    type: "application/x-mpegURL",
-                },
-            ],
-            autoplay: "muted",
-            liveui: true,
-            controls: true,
-        });
+      </p>
+    </video>
+  </section>
+  <script>
+    const url = "https://psdb-livestream.fly.dev/hls/live/demo/output.m3u8";
+    import videojs from "video.js";
+    var player = videojs("my-video", {
+      sources: [
+        {
+          src: url,
+          type: "application/x-mpegURL",
+        },
+      ],
+      autoplay: "muted",
+      liveui: true,
+      controls: true,
+    });
 
-        player.on("error", function () {
-            console.log("Player error detected - attempting to recover");
-            setTimeout(function () {
-                player.src({
-                    src: url,
-                    type: "application/x-mpegURL",
-                });
-                player.load();
-                player.play();
-            }, 3000);
+    player.on("error", function () {
+      console.log("Player error detected - attempting to recover");
+      setTimeout(function () {
+        player.src({
+          src: url,
+          type: "application/x-mpegURL",
         });
-    </script>
+        player.load();
+        player.play();
+      }, 3000);
+    });
+  </script>
 </MainLayout>
