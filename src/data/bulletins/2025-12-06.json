@@ -1,0 +1,110 @@
+{
+  "version": 2,
+  "date": "2025-12-06",
+  "sabbathSchool": {
+    "topic": "The Holy Scriptures",
+    "study": "Psalm 19:7-9; 2 Timothy 3:14-17",
+    "background": "Deuteronomy 6; Josh 1; 2 Kings 22; Nehemiah 8; Psalm 19; 2 Timothy 3:14-17",
+    "devotional": "Psalm 119:105-112"
+  },
+  "announcements": [
+    {
+      "description": "Thirteenth Sabbath",
+      "startDate": "2025-12-06"
+    },
+    {
+      "description": "Communion Service",
+      "startDate": "2025-12-13"
+    },
+    {
+      "description": "Children's Christmas Banquet",
+      "startDate": "2025-12-20",
+      "time": "4 PM",
+      "additionalInfo": "Tickets are $25."
+    },
+    {
+      "description": "December Business Meeting",
+      "startDate": "2025-12-21",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "worshipLeader",
+      "name": "Sis. Seanette Barrett"
+    },
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 19:19"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 176
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true,
+      "presentedBy":"Evangelist Precious Watt"
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 19"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 340
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "TBA"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "The Mark of a Saved Person",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 369
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ],
+
+  "youth": true
+}
