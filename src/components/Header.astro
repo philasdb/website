@@ -24,6 +24,8 @@ const url = "https://psdb-livestream.fly.dev/api/status";
         <a
           href="https://www.youtube.com/@PhiladelphiaSDBChurch"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our YouTube channel"
         >
           <Picture
             src={youtubeIcon}
@@ -36,7 +38,12 @@ const url = "https://psdb-livestream.fly.dev/api/status";
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/PhilaSDB/" target="_blank">
+        <a
+          href="https://www.facebook.com/PhilaSDB/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our Facebook page"
+        >
           <Picture
             src={facebookIcon}
             formats={["avif", "webp", "jpg"]}
@@ -56,6 +63,7 @@ const url = "https://psdb-livestream.fly.dev/api/status";
       </li>
       <li>
         <a href="/sermons">SERMONS</a>
+      </li>
       <li><a href="/giving">GIVING</a></li>
     </ul>
   </nav>
