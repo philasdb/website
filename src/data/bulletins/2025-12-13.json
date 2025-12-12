@@ -1,0 +1,108 @@
+{
+  "version": 2,
+  "date": "2025-12-13",
+  "sabbathSchool": {
+    "topic": "Our Heavenly Father",
+    "study": "Matthew 6:24-34",
+    "background": "Exodus 34;Psalm 103;Matthew 6:24-34;John 8:40-47;Romans 8:14-17;1 John 4:7-16",
+    "devotional": "Ephesians 1:3-10"
+  },
+  "announcements": [
+    {
+      "description": "Communion Service",
+      "startDate": "2025-12-13"
+    },
+    {
+      "description": "Children's Christmas Banquet",
+      "startDate": "2025-12-20",
+      "time": "4 PM",
+      "additionalInfo": "Tickets are $25."
+    },
+    {
+      "description": "December Business Meeting",
+      "startDate": "2025-12-21",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "John 1:14"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 116
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Genesis 1:1-8"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 169
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "John 1:1-14"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "The Word Became Flesh",
+        "speaker": "Brother Kevin Brey"
+      }
+    },
+    {
+      "type": "communion",
+      "communion": {
+        "description": "Lead by Pastor Kenroy Cruickshank",
+        "songs": [113, 160]
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 126
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ],
+
+  "youth": true
+}
