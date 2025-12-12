@@ -9,13 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/react": "4.4.2",
     "@astrojs/sitemap": "^3.6.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
     "@types/video.js": "^7.3.58",
     "@xmldom/xmldom": "^0.9.8",
-    "astro": "^5.14.1",
+    "astro": "5.16.5",
     "date-fns": "^4.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
