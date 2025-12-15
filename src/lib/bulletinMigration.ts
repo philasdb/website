@@ -5,9 +5,17 @@ import type { Bulletin, BulletinV1, BulletinV2, WorshipItem } from "./types";
  * If already v2, returns as-is.
  */
 export function migrateBulletinToV2(bulletin: Bulletin): BulletinV2 {
-  // Already v2, return as-is
+  // Already v2, but check if it has the old youth field
   if (bulletin.version === 2) {
-    return bulletin;
+    const v2 = bulletin as BulletinV2;
+    // If it has youth, add it to worshipService and remove
+    if ('youth' in v2 && v2.youth) {
+      const newV2 = { ...v2 };
+      delete (newV2 as any).youth;
+      newV2.worshipService = [...newV2.worshipService, { type: "youth" }];
+      return newV2;
+    }
+    return v2;
   }
 
   // Cast to v1 for migration
@@ -67,6 +75,13 @@ export function migrateBulletinToV2(bulletin: Bulletin): BulletinV2 {
       song: v1.tithesAndOfferingSong,
       scriptureReading: v1.scriptureReading,
       specialMusic: v1.specialMusic,
+    });
+  }
+
+  // Youth section
+  if (v1.youth) {
+    worshipService.push({
+      type: "youth",
     });
   }
 
@@ -130,6 +145,5 @@ export function migrateBulletinToV2(bulletin: Bulletin): BulletinV2 {
     announcements: v1.announcements,
     notes: v1.notes,
     worshipService,
-    youth: v1.youth,
   };
 }
