@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "date": "2025-12-20",
+  "sabbathSchool": {
+    "topic": "Christ the Savior",
+    "study": "Luke 15:3-7;Romans 5:6-10",
+    "background": "Luke 15:3-7;John 10;Acts 3:1-18;Romans 5:1-11;Philiipians 2:5-11;2 Timothy 1:9-10",
+    "devotional": "2 Timothy 2:8-13"
+  },
+  "announcements": [
+    {
+      "description": "Children's Christmas Banquet",
+      "startDate": "2025-12-20",
+      "time": "4 PM",
+      "additionalInfo": "Tickets are $25."
+    },
+    {
+      "description": "December Business Meeting",
+      "startDate": "2025-12-21",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-01-31"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Proverbs 22:6"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 286
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Proverbs 22"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 115
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Psalms 127:3-5"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "The Word Became Flesh",
+        "speaker": "Evangelist Precious Watt"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 217
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
