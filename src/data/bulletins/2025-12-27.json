@@ -26,11 +26,49 @@
   ],
   "worshipService": [
     {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalms 30:12"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 146
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalms 30"
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Luke 1:28-35"
+    },
+    {
       "type": "message",
       "message": {
-        "title": "TBA",
+        "title": "Jesus the Son of God",
         "speaker": "Pastor Kenroy Cruickshank"
       }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
     }
   ]
 }
