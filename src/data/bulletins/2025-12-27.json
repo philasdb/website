@@ -4,7 +4,7 @@
   "sabbathSchool": {
     "topic": "The Holy Spirit",
     "study": "Romans 8:12-14,26-27",
-    "background": "Joel 2:28;John 14;AActs 2;Romaans 8; 1 Corinthians 12:1-13;Ephesians 1:13-14",
+    "background": "Joel 2:28;John 14;Acts 2;Romans 8; 1 Corinthians 12:1-13;Ephesians 1:13-14",
     "devotional": "Ephesians 3:14-21"
   },
   "announcements": [
@@ -32,7 +32,7 @@
     {
       "type": "song",
       "label": "Opening Song",
-      "song": 146
+      "song": 190
     },
     {
       "type": "text",
@@ -61,6 +61,11 @@
         "title": "Jesus the Son of God",
         "speaker": "Pastor Kenroy Cruickshank"
       }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 146
     },
     {
       "type": "text",
