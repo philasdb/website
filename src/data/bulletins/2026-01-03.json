@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "date": "2026-01-03",
+  "sabbathSchool": {
+    "topic": "Sin",
+    "study": "1 John 1:5-2:6",
+    "background": "Genesis 3:1-24;Mark 7:14-23;Romans 1:18-32;3:10-18;1 John 1:5-2:6",
+    "devotional": "Isaiah 59:1-8"
+  },
+  "announcements": [
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-01-31"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 130:7"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 499
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 130"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 309
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Luke 19:1-8"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Willing to Go",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 508
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
