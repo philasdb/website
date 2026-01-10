@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "date": "2026-01-10",
+  "sabbathSchool": {
+    "topic": "Repentance and Faith",
+    "study": "Luke 15:11-24;Acts 2:38-39",
+    "background": "Isaiah 1:1-21;Ezra 18:20-32;Luke 15:11-24;Acts 2:32-39;Hebrews 11",
+    "devotional": "Mark 1:14-20"
+  },
+  "announcements": [
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-01-31"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "custom",
+      "label": "Week of Prayer Service",
+      "bold": true
+    },
+    {
+      "type": "worshipLeader",
+      "name": "Sis. Georgiana Woody"
+    },
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "John 17:23"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 93
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "John 17"
+    },
+    {
+      "type": "custom",
+      "label": "January 4",
+      "presentedBy": "Bro. Ted Lawerence"
+    },
+    {
+      "type": "custom",
+      "label": "January 5",
+      "presentedBy": "Sis. Karen Donato"
+    },
+    {
+      "type": "custom",
+      "label": "January 6",
+      "presentedBy": "Sis. Crystal Advent"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 28
+    },
+    {
+      "type": "custom",
+      "label": "January 7",
+      "presentedBy": "Bro. Tyler"
+    },
+    {
+      "type": "custom",
+      "label": "January 8",
+      "presentedBy": "Evangelist Precious Watt"
+    },
+    {
+      "type": "custom",
+      "label": "January 9",
+      "presentedBy": "Sis. Ulette Lewis"
+    },
+    {
+      "type": "song",
+      "song": 92
+    },
+    {
+      "type": "custom",
+      "label": "January 10",
+      "presentedBy": "Pastor Selvin Findlater"
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 2
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
