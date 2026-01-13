@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "date": "2026-01-17",
+  "sabbathSchool": {
+    "topic": "Prayer",
+    "study": "Genesis 18:25-27;Luke 18:9-14;1 John 5:14-15",
+    "background": "Genesis 18:25-33;Nehemiah 1;Matthew 6:5-15;Luke 18:1-14;1 John 5:14-15",
+    "devotional": "Psalm 141"
+  },
+  "announcements": [
+    {
+      "description": "January Business Meeting",
+      "startDate": "2026-01-18",
+      "time": "6:30 PM",
+      "location": "Zoom"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-02-07"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Matthew 6:9"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 61
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Matthew 6:5-15"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 286
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Ezekiel 36:17-27"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Hallowed Be Thy Name",
+        "speaker": "Brother Kevin Brey"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 56
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
