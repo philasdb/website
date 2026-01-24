@@ -53,13 +53,13 @@ class BibleReader {
     try {
       const osisID = `${book}.${chapter}.${verse}`;
       const verseElements = this.dom.getElementsByTagName('verse');
-      
+
       for (let i = 0; i < verseElements.length; i++) {
         const element = verseElements[i];
         if (element.getAttribute('osisID') === osisID) {
           const parent = element.parentNode;
           let text = '';
-          
+
           // Get text content from the verse element and its siblings until next verse
           let currentNode = element;
           while (currentNode && currentNode.nodeType !== undefined) {
@@ -73,7 +73,7 @@ class BibleReader {
             }
             currentNode = currentNode.nextSibling;
           }
-          
+
           return {
             book_id: book,
             book_name: this.bookAbbreviations[book] || book,
@@ -83,7 +83,7 @@ class BibleReader {
           };
         }
       }
-      
+
       return null;
     } catch (error) {
       console.error('Error getting verse:', error);
@@ -96,11 +96,11 @@ class BibleReader {
     try {
       const verses = [];
       const verseElements = this.dom.getElementsByTagName('verse');
-      
+
       for (let i = 0; i < verseElements.length; i++) {
         const element = verseElements[i];
         const osisID = element.getAttribute('osisID');
-        
+
         if (osisID && osisID.startsWith(`${book}.${chapter}.`)) {
           const verseNum = osisID.split('.')[2];
           const verse = this.getVerse(book, chapter, verseNum);
@@ -109,7 +109,7 @@ class BibleReader {
           }
         }
       }
-      
+
       return verses.sort((a, b) => a.verse - b.verse);
     } catch (error) {
       console.error('Error getting chapter:', error);
@@ -134,25 +134,37 @@ class BibleReader {
     }
   }
 
-  // Parse a reference string like "John 3:16" or "John 3:16-18" or "2 Timothy 3:16-17"
+  // Parse a single reference string like "John 3:16" or "John 3:16-18" or "2 Timothy 3:16-17"
   parseReference(ref) {
     // Handle multi-word book names like "2 Timothy", "1 Corinthians", etc.
     const match = ref.match(/^([1-3]?\s*[A-Za-z]+(?:\s+[A-Za-z]+)*)\s+(\d+):(\d+)(?:-(\d+))?$/);
     if (!match) {
       throw new Error(`Invalid reference format: ${ref}`);
     }
-    
+
     const [, bookName, chapter, startVerse, endVerse] = match;
-    
+
     // Convert full book name to abbreviation
     const book = this.convertBookNameToAbbreviation(bookName.trim());
-    
+
     return {
       book,
       chapter: parseInt(chapter),
       startVerse: parseInt(startVerse),
       endVerse: endVerse ? parseInt(endVerse) : parseInt(startVerse)
     };
+  }
+
+  // Parse multiple references separated by semicolons (e.g., "John 3:16;John 3:18" or "Romans 3:23")
+  parseReferences(refString) {
+    // Split by semicolon and trim each reference
+    const refs = refString.split(';').map(ref => ref.trim()).filter(ref => ref.length > 0);
+
+    if (refs.length === 0) {
+      throw new Error(`No valid references found in: ${refString}`);
+    }
+
+    return refs.map(ref => this.parseReference(ref));
   }
 
   // Convert full book name to OSIS abbreviation
@@ -174,20 +186,40 @@ class BibleReader {
       '2 Peter': '2Pet', '1 John': '1John', '2 John': '2John', '3 John': '3John', 'Jude': 'Jude',
       'Revelation': 'Rev'
     };
-    
+
     return bookMap[fullName] || fullName;
   }
 
-  // Main method to get verses by reference string
+  // Main method to get verses by reference string (supports single or multiple references)
   getReference(ref) {
     try {
-      const parsed = this.parseReference(ref);
-      
-      if (parsed.startVerse === parsed.endVerse) {
-        const verse = this.getVerse(parsed.book, parsed.chapter, parsed.startVerse);
-        return verse ? [verse] : [];
+      // Check if this is a multi-reference (contains semicolon)
+      if (ref.includes(';')) {
+        const parsedRefs = this.parseReferences(ref);
+        const allVerses = [];
+
+        for (const parsed of parsedRefs) {
+          let verses = [];
+          if (parsed.startVerse === parsed.endVerse) {
+            const verse = this.getVerse(parsed.book, parsed.chapter, parsed.startVerse);
+            verses = verse ? [verse] : [];
+          } else {
+            verses = this.getVerseRange(parsed.book, parsed.chapter, parsed.startVerse, parsed.endVerse);
+          }
+          allVerses.push(...verses);
+        }
+
+        return allVerses;
       } else {
-        return this.getVerseRange(parsed.book, parsed.chapter, parsed.startVerse, parsed.endVerse);
+        // Single reference
+        const parsed = this.parseReference(ref);
+
+        if (parsed.startVerse === parsed.endVerse) {
+          const verse = this.getVerse(parsed.book, parsed.chapter, parsed.startVerse);
+          return verse ? [verse] : [];
+        } else {
+          return this.getVerseRange(parsed.book, parsed.chapter, parsed.startVerse, parsed.endVerse);
+        }
       }
     } catch (error) {
       console.error('Error getting reference:', error);
@@ -200,7 +232,7 @@ class BibleReader {
     try {
       const verseElements = this.dom.getElementsByTagName('verse');
       const verses = [];
-      
+
       // Collect all valid verse IDs
       for (let i = 0; i < verseElements.length; i++) {
         const osisID = verseElements[i].getAttribute('osisID');
@@ -208,13 +240,13 @@ class BibleReader {
           verses.push(osisID);
         }
       }
-      
+
       if (verses.length === 0) return null;
-      
+
       // Pick a random verse
       const randomOsisID = verses[Math.floor(Math.random() * verses.length)];
       const [book, chapter, verse] = randomOsisID.split('.');
-      
+
       return this.getVerse(book, chapter, verse);
     } catch (error) {
       console.error('Error getting random verse:', error);
@@ -227,7 +259,7 @@ class BibleReader {
     try {
       const books = [];
       const bookElements = this.dom.querySelectorAll('div[type="book"]');
-      
+
       for (let i = 0; i < bookElements.length; i++) {
         const element = bookElements[i];
         const osisID = element.getAttribute('osisID');
@@ -238,7 +270,7 @@ class BibleReader {
           });
         }
       }
-      
+
       return books;
     } catch (error) {
       console.error('Error getting books:', error);
@@ -261,7 +293,7 @@ class BibleReader {
     }
 
     const text = verses.map(v => v.text).join(' ');
-    
+
     return {
       reference,
       verses,
