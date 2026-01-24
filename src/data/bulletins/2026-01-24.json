@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "date": "2026-01-24",
+  "sabbathSchool": {
+    "topic": "Christian Growth",
+    "study": "Matthew 4:18-20,16:16-18;John 21:15-18;2 Peter 3:14-15,18",
+    "background": "Matthew 4:18-20,16:15-18;John 21;Ephesians 4:11-16;Hebrews 6:1-3;2 Peter 3:14-18",
+    "devotional": "Colossians 2:1-7"
+  },
+  "announcements": [
+    {
+      "description": "Baptism Service",
+      "startDate": "2026-01-31"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-02-07"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Genesis 6:8"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 39
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Matthew 6:5-15"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 28
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Hebrews 4:16"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Favored By Grace - God's Grace",
+        "speaker": "Evangelist Precious Watt"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 38
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
