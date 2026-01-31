@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "date": "2026-01-31",
+  "sabbathSchool": {
+    "topic": "The Christian Church",
+    "study": "Mark 4:26-32;Ephesians 4:4-6,11-18",
+    "background": "Mark 4;Romans 12:4-8;Ephesians 1:15-23;2:13-22;4:4-6,11-16;5:22-27",
+    "devotional": "Acts 2:42-47"
+  },
+  "announcements": [
+    {
+      "description": "Baptism Service",
+      "startDate": "2026-01-31",
+      "additionalInfo": "Candidates: Phillipa Valentine, LuzVara Gahagan"
+    },
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-02-07"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 39:4"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 265
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 39"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 378
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Genesis 13:7-11"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Be Sure You are Right",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": {
+        "title": "There's a Great Day coming",
+        "hymnal": "Tabernacle Hymns: Number Four",
+        "hymnNumber": 301
+      }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
