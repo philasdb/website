@@ -8,7 +8,7 @@
     "dist"
   ],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false
   }
 }

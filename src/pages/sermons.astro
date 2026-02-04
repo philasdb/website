@@ -1,10 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import SermonsPage from "../components/SermonsPage.jsx";
 ---
 
 <MainLayout title="Sermons" canonical="/sermons">
   <h1>Sermons</h1>
   <p>Welcome to our Sermons page! Here you can find a collection of our recent sermons.</p>
-  <SermonsPage client:load />
+  <sermons-page></sermons-page>
 </MainLayout>
+
+<script>
+  import "../components/SermonsPage.ts";
+</script>

@@ -1,5 +1,4 @@
 ---
-import LivestreamLink from "./LivestreamLink";
 import youtubeIcon from "../images/youtube.png";
 import facebookIcon from "../images/facebook.png";
 import { Picture } from "astro:assets";
@@ -58,8 +57,8 @@ const url = "https://psdb-livestream.fly.dev/api/status";
     <ul>
       <li><a href="/">HOME</a></li>
       <li><a href="/about">ABOUT</a></li>
-      <li>
-        <LivestreamLink url={url} client:load />
+<li>
+        <livestream-link url={url}></livestream-link>
       </li>
       <li>
         <a href="/sermons">SERMONS</a>
@@ -93,3 +92,7 @@ const url = "https://psdb-livestream.fly.dev/api/status";
     </ul>
   </nav>
 </header>
+
+<script>
+  import "./LivestreamLink.ts";
+</script>
