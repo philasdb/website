@@ -24,3 +24,63 @@ pnpm-debug.log*
 .idea/
 
 .playwright-mcp/
+
+# .NET
+## Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio / MSBuild
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.csproj.user
+
+## NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nupkg
+**/packages/repositories.config
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## .NET Core
+project.json
+global.json
+
+## Rider
+*.sln.iml
+
+## dotnet tool
+.dotnet/
+
+## Publish output
+publish/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build logs
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResult.xml
+
+## Code coverage
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
