@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "date": "2026-02-07",
+  "sabbathSchool": {
+    "topic": "Baptism and the Lord's Supper",
+    "study": "Matthew 3:13-17;28:19-20;1 Corinthians 11:23-29",
+    "background": "Matthew 3:13-17;28:19-20;Romans 6:1-14;1 Corinthians 11:23-29",
+    "devotional": "John 1:29-34"
+  },
+  "announcements": [
+    {
+      "description": "Youth Sabbath",
+      "startDate": "2026-02-28"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 110:5-6"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 233
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 110"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 331
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Luke 17:26-32"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Jesus is Coming",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 546
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
