@@ -1,0 +1,120 @@
+{
+  "version": 2,
+  "date": "2026-02-28",
+  "sabbathSchool": {
+    "topic": "Recognizing Our Debt to Others",
+    "study": "Mark 12:28-34;James 2:14-17",
+    "background": "Mark 12:28-34;Philippians 2:1-8;Romans 15:1-7;James 2:14-17",
+    "devotional": "Proverbs 28:18-22"
+  },
+  "announcements": [
+    {
+      "description": "13th Sabbath",
+      "startDate": "2026-03-07"
+    },
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "worshipLeader",
+      "name": "Brother Daniel Cruickshank"
+    },
+    {
+      "type": "text",
+      "label": "Welcome to our Youth Sabbath"
+    },
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 1:3a"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": {
+        "title": "Holy Spirit, Faithful Guide",
+        "hymnNumber": "81",
+        "hymnal": "Hymns of Faith",
+        "url": "https://youtu.be/sNOLBSxPYis?si=5A7LQC30jZN1ekJP"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Prayer Requests",
+      "content": "Brother Daniel takes these from the congregation."
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "presentedBy": "Brother Tyler Gahagan"
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 1:1-6",
+      "presentedBy": "Sister Rosheika"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": {
+        "title": "Let Your Living Water Flow & Thank You Lord ",
+        "artist": "Vinesong",
+        "url": "https://youtu.be/bzxWhUv8dyg?si=jgRsUFN2WDxgCMgZ"
+      },
+      "presentedBy": "Sister Georgia Mills"
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "John 7:37-39",
+      "presentedBy": "Brother Omari"
+    },
+    {
+      "type": "custom",
+      "label": "Special Music"
+    },
+    {
+      "type": "custom",
+      "label": "\"The Woman at the Well\"",
+      "content": "A Presentation of John Chapter 4"
+    },
+    {
+      "type": "song",
+      "label": "Musical Summary",
+      "song": {
+        "title": "Musical Summary",
+        "url": "https://youtu.be/MzcNDHmcOjI?si=_RrkLo1Nx1x3GiUG"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Hymn",
+      "song": {
+        "title": "Fill Me Now",
+        "hymnNumber": "85",
+        "hymnal": "Hymns of Faith",
+        "url": "https://youtu.be/RRwGQMXvKWQ?si=F_AQ8oja35n5p13j"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer",
+      "presentedBy": "Brother John Mark Lorenzo"
+    },
+    {
+      "type": "scripture",
+      "label": "Benediction",
+      "reference": "1 Peter 1:3-4",
+      "presentedBy": "Brother Daniel Cruickshank"
+    }
+  ]
+}
