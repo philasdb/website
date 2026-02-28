@@ -137,7 +137,7 @@ class BibleReader {
   // Parse a single reference string like "John 3:16" or "John 3:16-18" or "2 Timothy 3:16-17"
   parseReference(ref) {
     // Handle multi-word book names like "2 Timothy", "1 Corinthians", etc.
-    const match = ref.match(/^([1-3]?\s*[A-Za-z]+(?:\s+[A-Za-z]+)*)\s+(\d+):(\d+)(?:-(\d+))?$/);
+    const match = ref.match(/^([1-3]?\s*[A-Za-z]+(?:\s+[A-Za-z]+)*)\s+(\d+):(\d+)[a-z]?(?:-(\d+)[a-z]?)?$/);
     if (!match) {
       throw new Error(`Invalid reference format: ${ref}`);
     }
