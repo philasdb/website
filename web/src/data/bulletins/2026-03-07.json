@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "date": "2026-03-07",
+  "sabbathSchool": {
+    "topic": "Keeping Fit for the Sake of Others",
+    "study": "Daniel 1:8-17;1 Timothy 4:7-8",
+    "background": "Daniel 1;1 Corinthians 9;1 Timothy 2",
+    "devotional": "Titus 1:5-9"
+  },
+  "announcements": [
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Acts 10:3"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": {
+        "title": "Angels from the Realms of Glory",
+        "hymnNumber": "124",
+        "hymnal": "Hymns of Faith",
+        "url": "https://youtu.be/38LsBb8TaEM?si=2Oe_EOMlm41XxQ8U"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 88:1-18"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": {
+        "title": "Pass Me Not",
+        "hymnNumber": "361",
+        "hymnal": "Hymns of Faith",
+        "url": "https://youtu.be/ysqaH9_uA2U?si=Qc8xmE8s3P4-GMvo"
+      }
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Acts 10:1-8"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "God Prepares the Heart of Cornelius to Receive His Son",
+        "speaker": "Brother Kevin"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": {
+        "title": "Bringing in the Sheaves",
+        "hymnNumber": "463",
+        "hymnal": "Hymns of Faith",
+        "url": "https://youtu.be/DJ_rTpLAk7Y?si=L2GAOJFZgw24fguI"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
