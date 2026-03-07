@@ -84,3 +84,5 @@ TestResult.xml
 *.coveragexml
 coverage*.json
 coverage*.xml
+.fake
+.playwright-cli/
