@@ -6,5 +6,8 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://philasdb.org',
-  integrations: [sitemap()]
+  integrations: [sitemap()],
+  experimental: {
+    rustCompiler: true
+  }
 });
