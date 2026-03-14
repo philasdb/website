@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "date": "2026-03-14",
+  "sabbathSchool": {
+    "topic": "Helping Neighbors in Need",
+    "study": "Deuteronomy 15:4-11;Matthew 25:41-45",
+    "background": "Deuteronomy 15;Matthew 25;Luke 10;James 1:27;2:14-17",
+    "devotional": "Exodus 20:12-17"
+  },
+  "announcements": [
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 62:10"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 432
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 62"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 398
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Luke 17:32"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Remember Lot's Wife",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": {
+        "title": "TBA",
+        "hymnNumber": "438",
+        "hymnal": "Magestic Hymns"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
