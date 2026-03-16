@@ -1,7 +1,9 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 
-const YOUTUBE_API_URL = "https://content-youtube.googleapis.com/youtube/v3/search?type=video&order=date&eventType=completed&channelId=UCtQ_XJELDHnjEolMjmIVpHw&maxResults=50&part=snippet&key=AIzaSyCGsp2PD5EuQgFkonuKQM-9ieCr2bhCY0M";
+const YOUTUBE_API_BASE = "https://content-youtube.googleapis.com/youtube/v3/search?type=video&order=date&channelId=UCtQ_XJELDHnjEolMjmIVpHw&maxResults=50&part=snippet&key=AIzaSyCGsp2PD5EuQgFkonuKQM-9ieCr2bhCY0M";
+const YOUTUBE_LIVESTREAMS_URL = YOUTUBE_API_BASE + "&eventType=completed";
+const YOUTUBE_UPLOADS_URL = YOUTUBE_API_BASE;
 
 interface SermonItem {
   id: { videoId: string };
@@ -34,9 +36,26 @@ export class SermonsPage extends LitElement {
 
   private async fetchSermons() {
     try {
-      const response = await fetch(YOUTUBE_API_URL);
-      const data = await response.json();
-      this.sermons = data.items || [];
+      const [livestreamsRes, uploadsRes] = await Promise.all([
+        fetch(YOUTUBE_LIVESTREAMS_URL),
+        fetch(YOUTUBE_UPLOADS_URL),
+      ]);
+      const [livestreamsData, uploadsData] = await Promise.all([
+        livestreamsRes.json(),
+        uploadsRes.json(),
+      ]);
+      const seen = new Set<string>();
+      const combined: SermonItem[] = [];
+      for (const item of [...(livestreamsData.items || []), ...(uploadsData.items || [])]) {
+        if (!seen.has(item.id.videoId)) {
+          seen.add(item.id.videoId);
+          combined.push(item);
+        }
+      }
+      combined.sort((a, b) =>
+        new Date(b.snippet.publishedAt).getTime() - new Date(a.snippet.publishedAt).getTime()
+      );
+      this.sermons = combined;
     } catch (error) {
       console.error('Error fetching sermons:', error);
     } finally {
