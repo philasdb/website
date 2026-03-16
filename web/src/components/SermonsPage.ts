@@ -44,6 +44,12 @@ export class SermonsPage extends LitElement {
     }
   }
 
+  private decodeHtml(text: string): string {
+    const textarea = document.createElement('textarea');
+    textarea.innerHTML = text;
+    return textarea.value;
+  }
+
   private formatDate(dateString: string): string {
     const date = new Date(dateString);
     return date.toLocaleDateString(undefined, { 
@@ -73,7 +79,7 @@ export class SermonsPage extends LitElement {
               style="width: 100%; height: auto; display: block;"
             />
             <div style="padding: 1rem;">
-              <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">${item.snippet.title.replace(/&quot;/g, '"')}</h3>
+              <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">${this.decodeHtml(item.snippet.title)}</h3>
               <p style="margin: 0; color: #666;">${this.formatDate(item.snippet.publishedAt)}</p>
             </div>
           </a>
