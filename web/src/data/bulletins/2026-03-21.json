@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "date": "2026-03-21",
+  "sabbathSchool": {
+    "topic": "All are One in Christ",
+    "study": "AActs 10:9-15,30-35;Galations 3:28-29",
+    "background": "Ruth 1;John 4; Acts 10:1-11:18;Romans 1;Galations 3:28-29",
+    "devotional": "Colossians 3:1-11"
+  },
+  "announcements": [
+       {
+      "description": "Communion Service",
+      "startDate": "2026-03-28"
+    },
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Psalm 15:3"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 108
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 15"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 545
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Genesis 32:24-31"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Be Honest",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 509
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
