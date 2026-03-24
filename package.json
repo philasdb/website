@@ -1,0 +1,11 @@
+{
+  "name": "philasdb-apphost",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "vscode-jsonrpc": "^8.2.1"
+  }
+}
