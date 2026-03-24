@@ -6,7 +6,7 @@
       "name": "Web Dev Server",
       "request": "launch",
       "type": "node-terminal",
-      "cwd": "${workspaceFolder}/web"
+      "cwd": "${workspaceFolder}/src/philasdb.site"
     }
   ]
 }

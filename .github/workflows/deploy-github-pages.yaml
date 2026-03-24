@@ -4,7 +4,7 @@ name: Deploy Github Pages
 on:
   push:
     branches: [ "main" ]
-    paths: [ "web/**" ]
+    paths: [ "src/philasdb.site/**" ]
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: web
+        working-directory: src/philasdb.site
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
             name: 'github-pages'
-            path: "web/dist/"
+            path: "src/philasdb.site/dist/"
             retention-days: 1
       
   deploy:
