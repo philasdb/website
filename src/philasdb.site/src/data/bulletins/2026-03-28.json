@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "date": "2026-03-28",
+  "sabbathSchool": {
+    "topic": "World Peace through Mutual Understanding",
+    "study": "Isaiah 2:2-4;Acts 17:26-28",
+    "background": "Isaiah 2;11:6-10;John 18:28-38;Acts 17;Ephesians 4",
+    "devotional": "Revelations 5:8-14"
+  },
+  "announcements": [
+    {
+      "description": "Communion Service",
+      "startDate": "2026-03-28"
+    },
+    {
+      "description": "Recieving of New Members",
+      "startDate": "2026-03-28",
+      "additionalInfo": "John Adams, Tyler Gahahan, Luz Gahagan and Phillipa Valentine"
+    },
+    {
+      "description": "Fundraising Concert Rehearsal for Youth and Children (18 and under) ",
+      "startDate": "2026-04-04"
+    },
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "John 13:5"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": 236
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "John 13:1-16"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": 159
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "1 Corinthians 5:7"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "Jesus was the Passover Sacrifice",
+        "speaker": "Pastor Kenroy Cruickshank"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": 520
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
