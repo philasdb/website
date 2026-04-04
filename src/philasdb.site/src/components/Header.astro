@@ -1,8 +1,4 @@
 ---
-import youtubeIcon from "../images/youtube.png";
-import facebookIcon from "../images/facebook.png";
-import { Picture } from "astro:assets";
-
 const url = "https://psdb-livestream.fly.dev/api/status";
 //const url = "http://localhost:10000/api/status";
 ---
@@ -25,17 +21,7 @@ const url = "https://psdb-livestream.fly.dev/api/status";
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit our YouTube channel"
-        >
-          <Picture
-            src={youtubeIcon}
-            formats={["avif", "webp", "jpg"]}
-            alt="YouTube"
-            width={64}
-            height={64}
-            style="width: 64px; height: 64px;"
-            loading="eager"
-          />
-        </a>
+        >YouTube</a>
       </li>
       <li>
         <a
@@ -43,17 +29,7 @@ const url = "https://psdb-livestream.fly.dev/api/status";
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Visit our Facebook page"
-        >
-          <Picture
-            src={facebookIcon}
-            formats={["avif", "webp", "jpg"]}
-            alt="Facebook"
-            width={48}
-            height={48}
-            style="width: 48px; height: 48px;"
-            loading="eager"
-          />
-        </a>
+        >Facebook</a>
       </li>
     </ul>
     <ul>
