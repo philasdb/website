@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "date": "2026-04-04",
+  "sabbathSchool": {
+    "topic": "The Future Life",
+    "study": "1 Corinthians 15:13-20,51-58",
+    "background": "Mark 12:26-27;John 14:1-6;1 Corinthians 15; 1 Thessalonians 4",
+    "devotional": "Luke 24:1-12"
+  },
+  "announcements": [
+    {
+      "description": "Fundraising Concert Rehearsal for Youth and Children (18 and under) ",
+      "startDate": "2026-04-04"
+    },
+    {
+      "description": "Conference Sessions 2026",
+      "startDate": "2026-07-21",
+      "endDate": "2026-07-26",
+      "location": "Calvin University, 3201 Burton St SE, Grand Rapids, MI 49546, United States"
+    }
+  ],
+  "notes": [
+    "We are having a special collection for Jamaican Hurricane Relief",
+    "*If you are a guest, please sign the guest book in the front*",
+    "*Please note that you can view the praise and worship and the remaining services on our website at philasdb.org/livestream*"
+  ],
+  "worshipService": [
+    {
+      "type": "thoughtOfTheDay",
+      "reference": "Acts 10:15"
+    },
+    {
+      "type": "song",
+      "label": "Opening Song",
+      "song": {
+        "hymnNumber": "264",
+        "title": "Nothing But the Blood",
+        "url": "https://youtu.be/RLbDyhKVN84?si=IJxUOfUnlPWgnhIN"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Welcome of New Visitors"
+    },
+    {
+      "type": "text",
+      "label": "Opening Prayer",
+      "content": "*Prayer Requests*",
+      "italic": true,
+      "small": true
+    },
+    {
+      "type": "scripture",
+      "label": "Responsive Reading",
+      "reference": "Psalm 67"
+    },
+    {
+      "type": "tithesAndOffering",
+      "song": {
+        "hymnNumber": "53",
+        "title": "All People That on Earth Do Dwell",
+        "url": "https://youtu.be/JmGwHdNtpEw?si=a0DGvBhF1wpOJkDv"
+      }
+    },
+    {
+      "type": "scripture",
+      "label": "Scripture Reading",
+      "reference": "Acts 10:9-23"
+    },
+    {
+      "type": "text",
+      "label": "Special Music"
+    },
+    {
+      "type": "youth"
+    },
+    {
+      "type": "message",
+      "message": {
+        "title": "God Prepares Peter, the Jew, to Preach the Gospel to a Non-Jew",
+        "speaker": "Brother Kevin Brey"
+      }
+    },
+    {
+      "type": "song",
+      "label": "Closing Song",
+      "song": {
+        "hymnNumber": "463",
+        "title": "Bringing in the Sheaves",
+        "url": "https://youtu.be/DJ_rTpLAk7Y?si=L2GAOJFZgw24fguI"
+      }
+    },
+    {
+      "type": "text",
+      "label": "Closing Prayer"
+    },
+    {
+      "type": "text",
+      "label": "Benediction"
+    }
+  ]
+}
